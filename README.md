@@ -82,7 +82,7 @@ python cli.py --engine improved --allow-partial --query "成人血压测量需�
 - `data/challenge_questions.jsonl`：扩展挑战题，与主题库和主测试集分开记录。
 - `data/sources.json`：来源清单与版本元数据。
 
-`results/extended_manual_review.jsonl` 保存对扩展测试集26道自适应回答、6道边界题和10道关键问题的单轮/无语义核证对照的逐条人工证据核读。该核读用于比较回答陈述与所引语料条目，不是临床专家评审，也不读取评分标签。
+`results/extended_manual_review.jsonl` 保存对扩展测试集26道自适应回答、6道边界题和10道关键问题的单轮/无语义核证对照的逐条文献核读（由 AI 代理辅助完成）。该核读用于比较回答陈述与所引语料条目，不是临床专家评审，也不读取评分标签。
 
 语料构建入口为 `data/build_clinical_corpus.py`。此脚本没有命令行选项；运行时会重建 `evidence.jsonl` 和 `questions.jsonl`。只有有意重建数据时才运行它，并在覆盖前核对版本和冻结哈希。挑战题文件不由该脚本生成。
 
