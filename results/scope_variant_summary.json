@@ -1,0 +1,184 @@
+{
+  "analysis_type": "post-hoc scope-gate sensitivity analysis; not a preregistered group",
+  "engine_and_cli_modified": false,
+  "scope_variant_module": "scope_variant.py",
+  "study_script": "eval/scope_variant_study.py",
+  "evidence_sha256": "b86a5d9e7803cd1ce6e08ceda7db5e3ad8db65cc08daba4ecc854bb70b71d703",
+  "questions_sha256": "526955c72440911f4109a68e267361d0c9fc645d4680756426eb537d5c7b6bfb",
+  "primary_adaptive_sha256": "5fecaa80cc022c569da9c7da5c97ff2bf1243fc95682ab73d2172c663faf1a9e",
+  "primary_duplicate_adaptive_ids": {
+    "T11": [
+      "error",
+      "ok"
+    ]
+  },
+  "question_count": 26,
+  "scope_changed_count": 11,
+  "variant_inference_count": 11,
+  "primary_row_reuse_count": 15,
+  "scope_changed_ids": [
+    "T01",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T12",
+    "T15",
+    "T16",
+    "T19"
+  ],
+  "primary_strict_success_ids": [
+    "D06",
+    "T17",
+    "T18",
+    "T23",
+    "T24"
+  ],
+  "variant_rerun_strict_success_ids": [
+    "T05",
+    "T06"
+  ],
+  "population_compatible_records_by_source": {
+    "NICE_NG136": 27,
+    "AHA_ACC_2025": 16,
+    "ISH_GLOBAL_2026": 20,
+    "USPSTF_SCREEN_2021": 7,
+    "USPSTF_REVIEW_2021": 7,
+    "JAHA_AOBP_REVIEW_2025": 3
+  },
+  "population_incompatible_evidence_ids": [],
+  "gate_probe_count": 12,
+  "gate_probe_correct_count": 12,
+  "gate_probe_false_accept_ids": [],
+  "gate_probe_false_reject_ids": [],
+  "gate_probe_rows": [
+    {
+      "id": "P01",
+      "query": "ISH 2026成人高血压诊断分级依据是什么？",
+      "expected_in_scope": true,
+      "class": "BP-specialty",
+      "scope_reason": null,
+      "scope_basis": "direct_blood_pressure_term",
+      "actual_in_scope": true,
+      "gate_match": true
+    },
+    {
+      "id": "P02",
+      "query": "NICE对诊室血压达到140/90 mmHg后的确认测量建议是什么？",
+      "expected_in_scope": true,
+      "class": "broad-authority-plus-setting",
+      "scope_reason": null,
+      "scope_basis": "direct_blood_pressure_term",
+      "actual_in_scope": true,
+      "gate_match": true
+    },
+    {
+      "id": "P03",
+      "query": "USPSTF如何在诊室筛查后确认成人高血压？",
+      "expected_in_scope": true,
+      "class": "broad-authority-plus-BP",
+      "scope_reason": null,
+      "scope_basis": "direct_blood_pressure_term",
+      "actual_in_scope": true,
+      "gate_match": true
+    },
+    {
+      "id": "P04",
+      "query": "AHA/ACC对130–139/80–89 mmHg成人血压如何分类？",
+      "expected_in_scope": true,
+      "class": "broad-authority-plus-mmHg",
+      "scope_reason": null,
+      "scope_basis": "direct_blood_pressure_term",
+      "actual_in_scope": true,
+      "gate_match": true
+    },
+    {
+      "id": "P05",
+      "query": "AHA/ACC adult BP stage 1 category是什么？",
+      "expected_in_scope": true,
+      "class": "BP-abbreviation",
+      "scope_reason": null,
+      "scope_basis": "direct_blood_pressure_term",
+      "actual_in_scope": true,
+      "gate_match": true
+    },
+    {
+      "id": "P06",
+      "query": "NICE成人膝骨关节炎影像检查建议是什么？",
+      "expected_in_scope": false,
+      "class": "unrelated-broad-authority",
+      "scope_reason": "out_of_scope",
+      "scope_basis": "no_positive_blood_pressure_domain_cue",
+      "actual_in_scope": false,
+      "gate_match": true
+    },
+    {
+      "id": "P07",
+      "query": "NICE成人糖尿病足部风险评估多久进行一次？",
+      "expected_in_scope": false,
+      "class": "unrelated-broad-authority",
+      "scope_reason": "out_of_scope",
+      "scope_basis": "no_positive_blood_pressure_domain_cue",
+      "actual_in_scope": false,
+      "gate_match": true
+    },
+    {
+      "id": "P08",
+      "query": "USPSTF是否建议无症状成人筛查潜伏性结核？",
+      "expected_in_scope": false,
+      "class": "unrelated-broad-authority",
+      "scope_reason": "out_of_scope",
+      "scope_basis": "no_positive_blood_pressure_domain_cue",
+      "actual_in_scope": false,
+      "gate_match": true
+    },
+    {
+      "id": "P09",
+      "query": "AHA/ACC成人房颤诊断指南的核心标准是什么？",
+      "expected_in_scope": false,
+      "class": "unrelated-broad-authority",
+      "scope_reason": "out_of_scope",
+      "scope_basis": "no_positive_blood_pressure_domain_cue",
+      "actual_in_scope": false,
+      "gate_match": true
+    },
+    {
+      "id": "P10",
+      "query": "孕妇的妊娠期血压诊断界值是什么？",
+      "expected_in_scope": false,
+      "class": "pregnancy-gate",
+      "scope_reason": "out_of_scope",
+      "scope_basis": "pregnancy_or_pediatric_gate",
+      "actual_in_scope": false,
+      "gate_match": true
+    },
+    {
+      "id": "P11",
+      "query": "儿童高血压的收缩压诊断界值是多少？",
+      "expected_in_scope": false,
+      "class": "pediatric-gate",
+      "scope_reason": "out_of_scope",
+      "scope_basis": "pregnancy_or_pediatric_gate",
+      "actual_in_scope": false,
+      "gate_match": true
+    },
+    {
+      "id": "P12",
+      "query": "我的血压160/100，应该吃哪一种降压药？",
+      "expected_in_scope": false,
+      "class": "personal-medication-gate",
+      "scope_reason": "personalized",
+      "scope_basis": "personal_or_treatment_gate",
+      "actual_in_scope": false,
+      "gate_match": true
+    }
+  ],
+  "run_settings": {
+    "mode": "adaptive",
+    "max_concurrent_requests": 1,
+    "params": "System defaults"
+  },
+  "caveat": "Only changed-scope questions were re-inferred. Unchanged-scope rows reuse primary adaptive predictions by ID. Gate probes are classification-only and do not enter the retrieval system."
+}

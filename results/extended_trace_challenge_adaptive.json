@@ -1,0 +1,1651 @@
+{
+  "summary": {
+    "split": "challenge",
+    "mode": "adaptive",
+    "n_answerable_with_gold": 20,
+    "n_first_gold_complete": 14,
+    "first_gold_complete_rate": 0.7,
+    "n_with_supplement": 15,
+    "n_supplement_added_gold": 2,
+    "n_supplement_rescued_supported_answer": 0,
+    "n_supplement_nonproductive_gold": 13,
+    "mean_first_gold_recall": 0.825,
+    "mean_final_gold_recall": 0.875,
+    "n_supplement_stages": 15,
+    "family": {
+      "conditional_paths": {
+        "n": 4,
+        "first_complete_n": 3,
+        "supplement_n": 2,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "cross_source_decision": {
+        "n": 4,
+        "first_complete_n": 2,
+        "supplement_n": 4,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "measurement_protocol": {
+        "n": 4,
+        "first_complete_n": 4,
+        "supplement_n": 2,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "review_evidence": {
+        "n": 4,
+        "first_complete_n": 1,
+        "supplement_n": 4,
+        "supplement_added_gold_n": 2,
+        "rescued_supported_answer_n": 0
+      },
+      "threshold_and_equivalence": {
+        "n": 4,
+        "first_complete_n": 4,
+        "supplement_n": 3,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "C01",
+      "family": "measurement_protocol",
+      "complexity": "multi",
+      "gold_ids": [
+        "AHA-HOME-02",
+        "AHA-HOME-03"
+      ],
+      "first_ids": [
+        "AHA-HOME-01",
+        "AHA-HOME-02",
+        "AHA-HOME-03",
+        "AHA-THRESH-01",
+        "ISH-MEAS-02"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 0,
+      "supplement_steps": [],
+      "final_ids": [
+        "AHA-HOME-01",
+        "AHA-HOME-02",
+        "AHA-HOME-03",
+        "AHA-THRESH-01",
+        "ISH-MEAS-02"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "AHA-HOME-02",
+        "AHA-HOME-03"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 1
+    },
+    {
+      "id": "C02",
+      "family": "measurement_protocol",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-MEAS-02"
+      ],
+      "first_ids": [
+        "NICE-DX-01",
+        "NICE-DX-05",
+        "NICE-HBPM-01",
+        "NICE-MEAS-02",
+        "NICE-MEAS-03"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C02",
+          "family": "measurement_protocol",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "NICE建议使用自动血压计前先做什么脉搏检查",
+            "nice 若发现脉搏不规则，应改用哪种测量方法",
+            "NICE建议使用自动血压计前先做什么脉搏检查？"
+          ],
+          "retrieved_ids": [
+            "NICE-DX-01",
+            "NICE-DX-05",
+            "NICE-HBPM-01",
+            "NICE-MEAS-02",
+            "NICE-MEAS-03"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-MEAS-02"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "NICE-DX-01",
+        "NICE-DX-05",
+        "NICE-HBPM-01",
+        "NICE-MEAS-02",
+        "NICE-MEAS-03"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "NICE-MEAS-02"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C03",
+      "family": "measurement_protocol",
+      "complexity": "single",
+      "gold_ids": [
+        "ISH-HOME-01"
+      ],
+      "first_ids": [
+        "ISH-DX-02",
+        "ISH-HOME-01",
+        "ISH-HOME-02",
+        "ISH-HOME-03",
+        "ISH-MEAS-03"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C03",
+          "family": "measurement_protocol",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "ISH的标准化家庭血压方案认可哪些设备",
+            "ish 腕式袖带表和无袖带设备能否替代",
+            "ISH的标准化家庭血压方案认可哪些设备？"
+          ],
+          "retrieved_ids": [
+            "ISH-DX-02",
+            "ISH-HOME-01",
+            "ISH-HOME-02",
+            "ISH-HOME-03",
+            "ISH-MEAS-03"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-HOME-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-DX-02",
+        "ISH-HOME-01",
+        "ISH-HOME-02",
+        "ISH-HOME-03",
+        "ISH-MEAS-03"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-HOME-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C04",
+      "family": "measurement_protocol",
+      "complexity": "multi",
+      "gold_ids": [
+        "USP-ABPM-01",
+        "USP-HBPM-01"
+      ],
+      "first_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-HBPM-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 0,
+      "supplement_steps": [],
+      "final_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-HBPM-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "USP-ABPM-01",
+        "USP-HBPM-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 1
+    },
+    {
+      "id": "C05",
+      "family": "threshold_and_equivalence",
+      "complexity": "single",
+      "gold_ids": [
+        "AHA-THRESH-01"
+      ],
+      "first_ids": [
+        "AHA-CLASS-03",
+        "AHA-HOME-03",
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "AHA-WCH-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 0,
+      "supplement_steps": [],
+      "final_ids": [
+        "AHA-CLASS-03",
+        "AHA-HOME-03",
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "AHA-WCH-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "AHA-THRESH-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 1
+    },
+    {
+      "id": "C06",
+      "family": "threshold_and_equivalence",
+      "complexity": "single",
+      "gold_ids": [
+        "ISH-CLASS-03"
+      ],
+      "first_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-DX-01",
+        "ISH-OUT-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C06",
+          "family": "threshold_and_equivalence",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "按ISH 2026，标准化诊室读数153/96 mmHg应归为哪一级",
+            "ish 请说明收缩压和舒张压",
+            "ish 落在哪一档"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-01",
+            "ISH-CLASS-02",
+            "ISH-CLASS-03",
+            "ISH-CLASS-04",
+            "ISH-DX-01",
+            "ISH-OUT-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-CLASS-03"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-DX-01",
+        "ISH-OUT-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-CLASS-03"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C07",
+      "family": "threshold_and_equivalence",
+      "complexity": "multi",
+      "gold_ids": [
+        "AHA-CLASS-02",
+        "AHA-CLASS-03"
+      ],
+      "first_ids": [
+        "AHA-CLASS-01",
+        "AHA-CLASS-02",
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "ISH-CLASS-02"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C07",
+          "family": "threshold_and_equivalence",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "为什么收缩压落在120–129并不足以归入elevated BP"
+          ],
+          "retrieved_ids": [
+            "AHA-CLASS-01",
+            "AHA-CLASS-02",
+            "AHA-CLASS-03",
+            "AHA-CLASS-04",
+            "ISH-CLASS-02"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "AHA-CLASS-02",
+            "AHA-CLASS-03"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-CLASS-01",
+        "AHA-CLASS-02",
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "ISH-CLASS-02"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "C08",
+      "family": "threshold_and_equivalence",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-CLASS-01"
+      ],
+      "first_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-04",
+        "NICE-DX-07",
+        "NICE-MONITOR-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C08",
+          "family": "threshold_and_equivalence",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "nice 是什么"
+          ],
+          "retrieved_ids": [
+            "NICE-CLASS-01",
+            "NICE-CLASS-02",
+            "NICE-DX-07",
+            "NICE-MEAS-01",
+            "NICE-POP-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-CLASS-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-04",
+        "NICE-DX-07",
+        "NICE-MEAS-01",
+        "NICE-MONITOR-01",
+        "NICE-POP-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "C09",
+      "family": "conditional_paths",
+      "complexity": "single",
+      "gold_ids": [
+        "ISH-POST-01"
+      ],
+      "first_ids": [],
+      "first_missing_gold": [
+        "ISH-POST-01"
+      ],
+      "first_gold_recall": 0.0,
+      "first_gold_complete": false,
+      "supplement_count": 0,
+      "supplement_steps": [],
+      "final_ids": [],
+      "final_gold_recall": 0.0,
+      "final_gold_complete": false,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 0
+    },
+    {
+      "id": "C10",
+      "family": "conditional_paths",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-POST-03"
+      ],
+      "first_ids": [
+        "NICE-DX-03",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03",
+        "NICE-POST-04"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C10",
+          "family": "conditional_paths",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "有体位性症状但坐位起始测量没达到阈值时，NICE下一步建议怎么测",
+            "nice 若仍未证实而症状持续呢"
+          ],
+          "retrieved_ids": [
+            "NICE-CLASS-01",
+            "NICE-CLASS-02",
+            "NICE-POST-01",
+            "NICE-POST-02",
+            "NICE-POST-03"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-POST-03"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03",
+        "NICE-POST-04"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "NICE-POST-01",
+        "NICE-POST-03"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C11",
+      "family": "conditional_paths",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-DX-08"
+      ],
+      "first_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-06",
+        "NICE-DX-08",
+        "NICE-URGENT-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 0,
+      "supplement_steps": [],
+      "final_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-06",
+        "NICE-DX-08",
+        "NICE-URGENT-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "NICE-DX-08"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 1
+    },
+    {
+      "id": "C12",
+      "family": "conditional_paths",
+      "complexity": "single",
+      "gold_ids": [
+        "AHA-WCH-01"
+      ],
+      "first_ids": [
+        "AHA-OUT-01",
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "AHA-WCH-01",
+        "NICE-URGENT-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C12",
+          "family": "conditional_paths",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "该读数还触发哪项及时处理提示"
+          ],
+          "retrieved_ids": [
+            "AHA-CLASS-05",
+            "AHA-OUT-01",
+            "AHA-THRESH-02",
+            "AHA-WCH-01",
+            "NICE-HBPM-02",
+            "NICE-URGENT-02"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "AHA-WCH-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-CLASS-05",
+        "AHA-OUT-01",
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "AHA-WCH-01",
+        "NICE-HBPM-02",
+        "NICE-URGENT-01",
+        "NICE-URGENT-02"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "C13",
+      "family": "cross_source_decision",
+      "complexity": "multi",
+      "gold_ids": [
+        "NICE-DX-04",
+        "NICE-DX-05",
+        "USP-SCREEN-01"
+      ],
+      "first_ids": [
+        "NICE-DX-07",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [
+        "NICE-DX-04",
+        "NICE-DX-05"
+      ],
+      "first_gold_recall": 0.3333333333333333,
+      "first_gold_complete": false,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C13",
+          "family": "cross_source_decision",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "将USPSTF的成人初筛流程与NICE的阳性诊室读数确认路径并列说明：何时做诊室外确认，NICE优先和替代方法",
+            "uspstf nice 成人 是什么",
+            "将USPSTF的成人初筛流程与NICE的阳性诊室读数确认路径并列说明"
+          ],
+          "retrieved_ids": [
+            "NICE-DX-07",
+            "NICE-POP-01",
+            "REV-OFFICE-01",
+            "REV-SCOPE-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "USP-SCREEN-01"
+          ],
+          "gold_recall_after_stage": 0.3333333333333333,
+          "gold_complete_after_stage": false
+        }
+      ],
+      "final_ids": [
+        "NICE-DX-07",
+        "NICE-POP-01",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "REV-SCOPE-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 0.3333333333333333,
+      "final_gold_complete": false,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "C14",
+      "family": "cross_source_decision",
+      "complexity": "multi",
+      "gold_ids": [
+        "NICE-DX-09",
+        "USP-INTERVAL-01"
+      ],
+      "first_ids": [
+        "NICE-DX-09",
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-INTERVAL-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C14",
+          "family": "cross_source_decision",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "missing_fraction_meets_supplement_threshold",
+          "queries": [
+            "uspstf nice 对未诊断成人的后续筛查",
+            "uspstf 成人 NICE的复测下限"
+          ],
+          "retrieved_ids": [
+            "NICE-DX-09",
+            "REV-OFFICE-01",
+            "REV-SCOPE-01",
+            "USP-INTERVAL-01",
+            "USP-POP-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-DX-09",
+            "USP-INTERVAL-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "NICE-DX-09",
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-INTERVAL-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "NICE-DX-09",
+        "USP-INTERVAL-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C15",
+      "family": "cross_source_decision",
+      "complexity": "multi",
+      "gold_ids": [
+        "AHA-CLASS-04",
+        "USP-BOUNDARY-01"
+      ],
+      "first_ids": [
+        "AHA-CLASS-04",
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C15",
+          "family": "cross_source_decision",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "uspstf 成人 AHA/ACC的第2期高血压分类阈值是什么",
+            "USPSTF成人筛查声明能否被当作制定所有机构通用诊断界值的来源",
+            "uspstf 成人 AHA/ACC的第2期高血压分类阈值是什么？"
+          ],
+          "retrieved_ids": [
+            "AHA-CLASS-04",
+            "REV-HETEROGENEITY-01",
+            "REV-SCOPE-01",
+            "USP-BOUNDARY-01",
+            "USP-POP-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "AHA-CLASS-04",
+            "USP-BOUNDARY-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-CLASS-04",
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "AHA-CLASS-04",
+        "USP-BOUNDARY-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C16",
+      "family": "cross_source_decision",
+      "complexity": "multi",
+      "gold_ids": [
+        "AHA-CLASS-05",
+        "ISH-CLASS-05"
+      ],
+      "first_ids": [
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-03",
+        "ISH-MEAS-03"
+      ],
+      "first_missing_gold": [
+        "AHA-CLASS-05"
+      ],
+      "first_gold_recall": 0.5,
+      "first_gold_complete": false,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C16",
+          "family": "cross_source_decision",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "血压分类依据所需的重复测量，AHA/ACC与ISH 2026"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-01",
+            "ISH-CLASS-05",
+            "ISH-DX-02",
+            "ISH-MEAS-01",
+            "ISH-MEAS-03"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-CLASS-05"
+          ],
+          "gold_recall_after_stage": 0.5,
+          "gold_complete_after_stage": false
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-03",
+        "ISH-MEAS-01",
+        "ISH-MEAS-03"
+      ],
+      "final_gold_recall": 0.5,
+      "final_gold_complete": false,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "C17",
+      "family": "review_evidence",
+      "complexity": "multi",
+      "gold_ids": [
+        "REV-SCOPE-01",
+        "REV-SIZE-01"
+      ],
+      "first_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [
+        "REV-SIZE-01"
+      ],
+      "first_gold_recall": 0.5,
+      "first_gold_complete": false,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C17",
+          "family": "review_evidence",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "USPSTF委托的系统综述覆盖到哪一天，研究范围和样本规模是什么",
+            "uspstf 其确诊准确性比较以何种方法作参考",
+            "USPSTF委托的系统综述覆盖到哪一天"
+          ],
+          "retrieved_ids": [
+            "REV-HETEROGENEITY-01",
+            "REV-SCOPE-01",
+            "REV-SIZE-01",
+            "USP-BOUNDARY-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [
+            "REV-SIZE-01"
+          ],
+          "gold_ids_found_after_stage": [
+            "REV-SCOPE-01",
+            "REV-SIZE-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "REV-SIZE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": true,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "REV-SIZE-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C18",
+      "family": "review_evidence",
+      "complexity": "multi",
+      "gold_ids": [
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "first_ids": [
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "first_gold_recall": 0.6666666666666666,
+      "first_gold_complete": false,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C18",
+          "family": "review_evidence",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "multi_aspect_fallback",
+          "queries": [
+            "USPSTF证据综述中，初筛诊室、诊室确诊和家庭确诊测量的汇总敏感度/特异度及各自研究数",
+            "uspstf 是多少",
+            "USPSTF证据综述中，初筛诊室、诊室确诊和家庭确诊测量的汇总敏感度/特异度及各自研究数分别是多少？"
+          ],
+          "retrieved_ids": [
+            "REV-HOME-01",
+            "REV-OFFICE-01",
+            "REV-SCOPE-01",
+            "USP-BOUNDARY-01",
+            "USP-POP-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "REV-HOME-01",
+            "REV-OFFICE-01"
+          ],
+          "gold_recall_after_stage": 0.6666666666666666,
+          "gold_complete_after_stage": false
+        }
+      ],
+      "final_ids": [
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 0.6666666666666666,
+      "final_gold_complete": false,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "C19",
+      "family": "review_evidence",
+      "complexity": "multi",
+      "gold_ids": [
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02",
+        "JAHA-AOBP-03"
+      ],
+      "first_ids": [
+        "AHA-WCH-01",
+        "ISH-OUT-03",
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02",
+        "JAHA-AOBP-03"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C19",
+          "family": "review_evidence",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "给出两项全样本差值"
+          ],
+          "retrieved_ids": [
+            "AHA-THRESH-01",
+            "AHA-THRESH-02",
+            "JAHA-AOBP-01",
+            "JAHA-AOBP-02",
+            "JAHA-AOBP-03",
+            "NICE-DX-01",
+            "NICE-DX-02"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "JAHA-AOBP-01",
+            "JAHA-AOBP-02",
+            "JAHA-AOBP-03"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "ISH-OUT-03",
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02",
+        "JAHA-AOBP-03",
+        "NICE-DX-01",
+        "NICE-DX-02"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02",
+        "JAHA-AOBP-03"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "C20",
+      "family": "review_evidence",
+      "complexity": "multi",
+      "gold_ids": [
+        "REV-HARM-01",
+        "REV-HETEROGENEITY-01"
+      ],
+      "first_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-HBPM-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [
+        "REV-HETEROGENEITY-01"
+      ],
+      "first_gold_recall": 0.5,
+      "first_gold_complete": false,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "C20",
+          "family": "review_evidence",
+          "mode": "adaptive",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "USPSTF综述报告的确诊方式准确性有何异质性",
+            "USPSTF综述报告的确诊方式准确性有何异质性？"
+          ],
+          "retrieved_ids": [
+            "REV-HARM-01",
+            "REV-HETEROGENEITY-01",
+            "REV-SCOPE-01",
+            "USP-BOUNDARY-01",
+            "USP-POP-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [
+            "REV-HETEROGENEITY-01"
+          ],
+          "gold_ids_found_after_stage": [
+            "REV-HARM-01",
+            "REV-HETEROGENEITY-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "REV-HARM-01",
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-BOUNDARY-01",
+        "USP-HBPM-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": true,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "REV-HARM-01",
+        "REV-HETEROGENEITY-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    }
+  ],
+  "stages": [
+    {
+      "id": "C02",
+      "family": "measurement_protocol",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "NICE建议使用自动血压计前先做什么脉搏检查",
+        "nice 若发现脉搏不规则，应改用哪种测量方法",
+        "NICE建议使用自动血压计前先做什么脉搏检查？"
+      ],
+      "retrieved_ids": [
+        "NICE-DX-01",
+        "NICE-DX-05",
+        "NICE-HBPM-01",
+        "NICE-MEAS-02",
+        "NICE-MEAS-03"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-MEAS-02"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C03",
+      "family": "measurement_protocol",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "ISH的标准化家庭血压方案认可哪些设备",
+        "ish 腕式袖带表和无袖带设备能否替代",
+        "ISH的标准化家庭血压方案认可哪些设备？"
+      ],
+      "retrieved_ids": [
+        "ISH-DX-02",
+        "ISH-HOME-01",
+        "ISH-HOME-02",
+        "ISH-HOME-03",
+        "ISH-MEAS-03"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-HOME-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C06",
+      "family": "threshold_and_equivalence",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "按ISH 2026，标准化诊室读数153/96 mmHg应归为哪一级",
+        "ish 请说明收缩压和舒张压",
+        "ish 落在哪一档"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-DX-01",
+        "ISH-OUT-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-CLASS-03"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C07",
+      "family": "threshold_and_equivalence",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "为什么收缩压落在120–129并不足以归入elevated BP"
+      ],
+      "retrieved_ids": [
+        "AHA-CLASS-01",
+        "AHA-CLASS-02",
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "ISH-CLASS-02"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "AHA-CLASS-02",
+        "AHA-CLASS-03"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C08",
+      "family": "threshold_and_equivalence",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "nice 是什么"
+      ],
+      "retrieved_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07",
+        "NICE-MEAS-01",
+        "NICE-POP-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-CLASS-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C10",
+      "family": "conditional_paths",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "有体位性症状但坐位起始测量没达到阈值时，NICE下一步建议怎么测",
+        "nice 若仍未证实而症状持续呢"
+      ],
+      "retrieved_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-POST-03"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C12",
+      "family": "conditional_paths",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "该读数还触发哪项及时处理提示"
+      ],
+      "retrieved_ids": [
+        "AHA-CLASS-05",
+        "AHA-OUT-01",
+        "AHA-THRESH-02",
+        "AHA-WCH-01",
+        "NICE-HBPM-02",
+        "NICE-URGENT-02"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "AHA-WCH-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C13",
+      "family": "cross_source_decision",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "将USPSTF的成人初筛流程与NICE的阳性诊室读数确认路径并列说明：何时做诊室外确认，NICE优先和替代方法",
+        "uspstf nice 成人 是什么",
+        "将USPSTF的成人初筛流程与NICE的阳性诊室读数确认路径并列说明"
+      ],
+      "retrieved_ids": [
+        "NICE-DX-07",
+        "NICE-POP-01",
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "USP-SCREEN-01"
+      ],
+      "gold_recall_after_stage": 0.3333333333333333,
+      "gold_complete_after_stage": false
+    },
+    {
+      "id": "C14",
+      "family": "cross_source_decision",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "missing_fraction_meets_supplement_threshold",
+      "queries": [
+        "uspstf nice 对未诊断成人的后续筛查",
+        "uspstf 成人 NICE的复测下限"
+      ],
+      "retrieved_ids": [
+        "NICE-DX-09",
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-INTERVAL-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-DX-09",
+        "USP-INTERVAL-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C15",
+      "family": "cross_source_decision",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "uspstf 成人 AHA/ACC的第2期高血压分类阈值是什么",
+        "USPSTF成人筛查声明能否被当作制定所有机构通用诊断界值的来源",
+        "uspstf 成人 AHA/ACC的第2期高血压分类阈值是什么？"
+      ],
+      "retrieved_ids": [
+        "AHA-CLASS-04",
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "AHA-CLASS-04",
+        "USP-BOUNDARY-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C16",
+      "family": "cross_source_decision",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "血压分类依据所需的重复测量，AHA/ACC与ISH 2026"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-05",
+        "ISH-DX-02",
+        "ISH-MEAS-01",
+        "ISH-MEAS-03"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-CLASS-05"
+      ],
+      "gold_recall_after_stage": 0.5,
+      "gold_complete_after_stage": false
+    },
+    {
+      "id": "C17",
+      "family": "review_evidence",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "USPSTF委托的系统综述覆盖到哪一天，研究范围和样本规模是什么",
+        "uspstf 其确诊准确性比较以何种方法作参考",
+        "USPSTF委托的系统综述覆盖到哪一天"
+      ],
+      "retrieved_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "REV-SIZE-01",
+        "USP-BOUNDARY-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [
+        "REV-SIZE-01"
+      ],
+      "gold_ids_found_after_stage": [
+        "REV-SCOPE-01",
+        "REV-SIZE-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C18",
+      "family": "review_evidence",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "multi_aspect_fallback",
+      "queries": [
+        "USPSTF证据综述中，初筛诊室、诊室确诊和家庭确诊测量的汇总敏感度/特异度及各自研究数",
+        "uspstf 是多少",
+        "USPSTF证据综述中，初筛诊室、诊室确诊和家庭确诊测量的汇总敏感度/特异度及各自研究数分别是多少？"
+      ],
+      "retrieved_ids": [
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "REV-HOME-01",
+        "REV-OFFICE-01"
+      ],
+      "gold_recall_after_stage": 0.6666666666666666,
+      "gold_complete_after_stage": false
+    },
+    {
+      "id": "C19",
+      "family": "review_evidence",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "给出两项全样本差值"
+      ],
+      "retrieved_ids": [
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02",
+        "JAHA-AOBP-03",
+        "NICE-DX-01",
+        "NICE-DX-02"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02",
+        "JAHA-AOBP-03"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "C20",
+      "family": "review_evidence",
+      "mode": "adaptive",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "USPSTF综述报告的确诊方式准确性有何异质性",
+        "USPSTF综述报告的确诊方式准确性有何异质性？"
+      ],
+      "retrieved_ids": [
+        "REV-HARM-01",
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [
+        "REV-HETEROGENEITY-01"
+      ],
+      "gold_ids_found_after_stage": [
+        "REV-HARM-01",
+        "REV-HETEROGENEITY-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    }
+  ]
+}

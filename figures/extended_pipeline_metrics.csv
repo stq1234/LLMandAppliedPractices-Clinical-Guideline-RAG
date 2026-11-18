@@ -1,0 +1,9 @@
+cohort,mode,answerable_n,strict_answer_n,final_context_full_n
+test,single,22,4,19
+test,multi,22,4,19
+test,adaptive,22,4,18
+test,adaptive_nocrit,22,4,17
+challenge,single,20,0,14
+challenge,multi,20,0,16
+challenge,adaptive,20,0,16
+challenge,adaptive_nocrit,20,1,15

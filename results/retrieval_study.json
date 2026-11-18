@@ -1,0 +1,880 @@
+{
+  "summary": {
+    "all": {
+      "lexical": {
+        "1": {
+          "complete": 8,
+          "macro_recall": 0.5378787878787878,
+          "n": 22
+        },
+        "3": {
+          "complete": 17,
+          "macro_recall": 0.8712121212121211,
+          "n": 22
+        },
+        "5": {
+          "complete": 17,
+          "macro_recall": 0.8712121212121211,
+          "n": 22
+        },
+        "8": {
+          "complete": 18,
+          "macro_recall": 0.8939393939393938,
+          "n": 22
+        },
+        "10": {
+          "complete": 20,
+          "macro_recall": 0.9545454545454546,
+          "n": 22
+        }
+      },
+      "dense": {
+        "1": {
+          "complete": 9,
+          "macro_recall": 0.6287878787878788,
+          "n": 22
+        },
+        "3": {
+          "complete": 18,
+          "macro_recall": 0.9090909090909091,
+          "n": 22
+        },
+        "5": {
+          "complete": 20,
+          "macro_recall": 0.9545454545454546,
+          "n": 22
+        },
+        "8": {
+          "complete": 20,
+          "macro_recall": 0.9545454545454546,
+          "n": 22
+        },
+        "10": {
+          "complete": 22,
+          "macro_recall": 1.0,
+          "n": 22
+        }
+      },
+      "hybrid": {
+        "1": {
+          "complete": 9,
+          "macro_recall": 0.6287878787878788,
+          "n": 22
+        },
+        "3": {
+          "complete": 21,
+          "macro_recall": 0.9772727272727273,
+          "n": 22
+        },
+        "5": {
+          "complete": 21,
+          "macro_recall": 0.9772727272727273,
+          "n": 22
+        },
+        "8": {
+          "complete": 21,
+          "macro_recall": 0.9772727272727273,
+          "n": 22
+        },
+        "10": {
+          "complete": 21,
+          "macro_recall": 0.9772727272727273,
+          "n": 22
+        }
+      },
+      "named_sources": {
+        "1": {
+          "complete": 9,
+          "macro_recall": 0.6287878787878788,
+          "n": 22
+        },
+        "3": {
+          "complete": 21,
+          "macro_recall": 0.9772727272727273,
+          "n": 22
+        },
+        "5": {
+          "complete": 21,
+          "macro_recall": 0.9772727272727273,
+          "n": 22
+        },
+        "8": {
+          "complete": 22,
+          "macro_recall": 1.0,
+          "n": 22
+        },
+        "10": {
+          "complete": 22,
+          "macro_recall": 1.0,
+          "n": 22
+        }
+      }
+    },
+    "single": {
+      "lexical": {
+        "1": {
+          "complete": 8,
+          "macro_recall": 0.7272727272727273,
+          "n": 11
+        },
+        "3": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "5": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "8": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "10": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        }
+      },
+      "dense": {
+        "1": {
+          "complete": 9,
+          "macro_recall": 0.8181818181818182,
+          "n": 11
+        },
+        "3": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "5": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "8": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "10": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        }
+      },
+      "hybrid": {
+        "1": {
+          "complete": 9,
+          "macro_recall": 0.8181818181818182,
+          "n": 11
+        },
+        "3": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "5": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "8": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "10": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        }
+      },
+      "named_sources": {
+        "1": {
+          "complete": 9,
+          "macro_recall": 0.8181818181818182,
+          "n": 11
+        },
+        "3": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "5": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "8": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "10": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        }
+      }
+    },
+    "multi": {
+      "lexical": {
+        "1": {
+          "complete": 0,
+          "macro_recall": 0.34848484848484845,
+          "n": 11
+        },
+        "3": {
+          "complete": 6,
+          "macro_recall": 0.7424242424242423,
+          "n": 11
+        },
+        "5": {
+          "complete": 6,
+          "macro_recall": 0.7424242424242423,
+          "n": 11
+        },
+        "8": {
+          "complete": 7,
+          "macro_recall": 0.7878787878787878,
+          "n": 11
+        },
+        "10": {
+          "complete": 9,
+          "macro_recall": 0.9090909090909091,
+          "n": 11
+        }
+      },
+      "dense": {
+        "1": {
+          "complete": 0,
+          "macro_recall": 0.4393939393939394,
+          "n": 11
+        },
+        "3": {
+          "complete": 7,
+          "macro_recall": 0.8181818181818182,
+          "n": 11
+        },
+        "5": {
+          "complete": 9,
+          "macro_recall": 0.9090909090909091,
+          "n": 11
+        },
+        "8": {
+          "complete": 9,
+          "macro_recall": 0.9090909090909091,
+          "n": 11
+        },
+        "10": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        }
+      },
+      "hybrid": {
+        "1": {
+          "complete": 0,
+          "macro_recall": 0.4393939393939394,
+          "n": 11
+        },
+        "3": {
+          "complete": 10,
+          "macro_recall": 0.9545454545454546,
+          "n": 11
+        },
+        "5": {
+          "complete": 10,
+          "macro_recall": 0.9545454545454546,
+          "n": 11
+        },
+        "8": {
+          "complete": 10,
+          "macro_recall": 0.9545454545454546,
+          "n": 11
+        },
+        "10": {
+          "complete": 10,
+          "macro_recall": 0.9545454545454546,
+          "n": 11
+        }
+      },
+      "named_sources": {
+        "1": {
+          "complete": 0,
+          "macro_recall": 0.4393939393939394,
+          "n": 11
+        },
+        "3": {
+          "complete": 10,
+          "macro_recall": 0.9545454545454546,
+          "n": 11
+        },
+        "5": {
+          "complete": 10,
+          "macro_recall": 0.9545454545454546,
+          "n": 11
+        },
+        "8": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        },
+        "10": {
+          "complete": 11,
+          "macro_recall": 1.0,
+          "n": 11
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "D05",
+      "complexity": "single",
+      "query": "有体位性头晕的成人，NICE建议如何安排起始和站立测量？",
+      "gold": [
+        "NICE-POST-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "NICE-POST-01": 1
+        },
+        "dense": {
+          "NICE-POST-01": 1
+        },
+        "hybrid": {
+          "NICE-POST-01": 1
+        },
+        "named_sources": {
+          "NICE-POST-01": 1
+        }
+      }
+    },
+    {
+      "id": "D06",
+      "complexity": "single",
+      "query": "NICE判定显著体位性血压下降的两个阈值是什么？",
+      "gold": [
+        "NICE-POST-02"
+      ],
+      "ranks": {
+        "lexical": {
+          "NICE-POST-02": 1
+        },
+        "dense": {
+          "NICE-POST-02": 1
+        },
+        "hybrid": {
+          "NICE-POST-02": 1
+        },
+        "named_sources": {
+          "NICE-POST-02": 1
+        }
+      }
+    },
+    {
+      "id": "T01",
+      "complexity": "multi",
+      "query": "AHA/ACC与ISH 2026分别把130–139/80–89 mmHg归为什么类别？",
+      "gold": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-02"
+      ],
+      "ranks": {
+        "lexical": {
+          "AHA-CLASS-03": 2,
+          "ISH-CLASS-02": 1
+        },
+        "dense": {
+          "AHA-CLASS-03": 5,
+          "ISH-CLASS-02": 1
+        },
+        "hybrid": {
+          "AHA-CLASS-03": 2,
+          "ISH-CLASS-02": 1
+        },
+        "named_sources": {
+          "AHA-CLASS-03": 2,
+          "ISH-CLASS-02": 1
+        }
+      }
+    },
+    {
+      "id": "T02",
+      "complexity": "multi",
+      "query": "按NICE与ISH 2026，首次双臂测量后，持续臂间收缩压差多少会改用高读数臂？",
+      "gold": [
+        "NICE-DX-01",
+        "NICE-DX-02",
+        "ISH-MEAS-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-MEAS-01": 1,
+          "NICE-DX-01": 2,
+          "NICE-DX-02": 10
+        },
+        "dense": {
+          "ISH-MEAS-01": 1,
+          "NICE-DX-01": 2,
+          "NICE-DX-02": 3
+        },
+        "hybrid": {
+          "ISH-MEAS-01": 1,
+          "NICE-DX-01": 2,
+          "NICE-DX-02": 3
+        },
+        "named_sources": {
+          "ISH-MEAS-01": 1,
+          "NICE-DX-01": 2,
+          "NICE-DX-02": 3
+        }
+      }
+    },
+    {
+      "id": "T03",
+      "complexity": "multi",
+      "query": "NICE对诊室150/96 mmHg的成人如何复测，并用什么方式确认？",
+      "gold": [
+        "NICE-DX-03",
+        "NICE-DX-04"
+      ],
+      "ranks": {
+        "lexical": {
+          "NICE-DX-03": 9,
+          "NICE-DX-04": 10
+        },
+        "dense": {
+          "NICE-DX-03": 1,
+          "NICE-DX-04": 10
+        },
+        "hybrid": {
+          "NICE-DX-03": 1,
+          "NICE-DX-04": 11
+        },
+        "named_sources": {
+          "NICE-DX-03": 1,
+          "NICE-DX-04": 8
+        }
+      }
+    },
+    {
+      "id": "T04",
+      "complexity": "multi",
+      "query": "比较NICE与ISH家庭诊断方案：是否弃去第一天，分别记录至少几天？",
+      "gold": [
+        "NICE-HBPM-02",
+        "ISH-HOME-02"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-HOME-02": 11,
+          "NICE-HBPM-02": 1
+        },
+        "dense": {
+          "ISH-HOME-02": 1,
+          "NICE-HBPM-02": 2
+        },
+        "hybrid": {
+          "ISH-HOME-02": 2,
+          "NICE-HBPM-02": 1
+        },
+        "named_sources": {
+          "ISH-HOME-02": 2,
+          "NICE-HBPM-02": 1
+        }
+      }
+    },
+    {
+      "id": "T05",
+      "complexity": "single",
+      "query": "给医生一个AHA/ACC 140/90 mmHg诊室值对应的夜间和24小时ABPM表值。",
+      "gold": [
+        "AHA-THRESH-02"
+      ],
+      "ranks": {
+        "lexical": {
+          "AHA-THRESH-02": 1
+        },
+        "dense": {
+          "AHA-THRESH-02": 1
+        },
+        "hybrid": {
+          "AHA-THRESH-02": 1
+        },
+        "named_sources": {
+          "AHA-THRESH-02": 1
+        }
+      }
+    },
+    {
+      "id": "T06",
+      "complexity": "single",
+      "query": "按ISH 2026的分级，成人标准化诊室160/100 mmHg处于哪个等级？",
+      "gold": [
+        "ISH-CLASS-04"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-CLASS-04": 2
+        },
+        "dense": {
+          "ISH-CLASS-04": 1
+        },
+        "hybrid": {
+          "ISH-CLASS-04": 2
+        },
+        "named_sources": {
+          "ISH-CLASS-04": 2
+        }
+      }
+    },
+    {
+      "id": "T07",
+      "complexity": "single",
+      "query": "ISH 2026通常要求几次诊室就诊确认，且一般间隔几周？",
+      "gold": [
+        "ISH-DX-03"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-DX-03": 1
+        },
+        "dense": {
+          "ISH-DX-03": 2
+        },
+        "hybrid": {
+          "ISH-DX-03": 1
+        },
+        "named_sources": {
+          "ISH-DX-03": 1
+        }
+      }
+    },
+    {
+      "id": "T08",
+      "complexity": "single",
+      "query": "ISH 2026何种情况允许不等待多次就诊便在一次就诊诊断？",
+      "gold": [
+        "ISH-DX-04"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-DX-04": 2
+        },
+        "dense": {
+          "ISH-DX-04": 3
+        },
+        "hybrid": {
+          "ISH-DX-04": 2
+        },
+        "named_sources": {
+          "ISH-DX-04": 2
+        }
+      }
+    },
+    {
+      "id": "T09",
+      "complexity": "multi",
+      "query": "按NICE，诊室140/90至180/120 mmHg时提供什么确认监测？按ISH通常需几次就诊、间隔几周确认？",
+      "gold": [
+        "NICE-DX-04",
+        "ISH-DX-03"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-DX-03": 3,
+          "NICE-DX-04": 1
+        },
+        "dense": {
+          "ISH-DX-03": 3,
+          "NICE-DX-04": 10
+        },
+        "hybrid": {
+          "ISH-DX-03": 2,
+          "NICE-DX-04": 3
+        },
+        "named_sources": {
+          "ISH-DX-03": 2,
+          "NICE-DX-04": 3
+        }
+      }
+    },
+    {
+      "id": "T10",
+      "complexity": "multi",
+      "query": "按ISH标准化诊室方案，安静坐位准备多久，袖带臂应怎样放置？",
+      "gold": [
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-MEAS-02": 2,
+          "ISH-MEAS-03": 7
+        },
+        "dense": {
+          "ISH-MEAS-02": 1,
+          "ISH-MEAS-03": 2
+        },
+        "hybrid": {
+          "ISH-MEAS-02": 1,
+          "ISH-MEAS-03": 3
+        },
+        "named_sources": {
+          "ISH-MEAS-02": 1,
+          "ISH-MEAS-03": 2
+        }
+      }
+    },
+    {
+      "id": "T11",
+      "complexity": "multi",
+      "query": "对出现体位性症状的成人，NICE与ISH分别从何种姿势开始、何时测站立血压？ISH的重点筛查人群又有哪些？",
+      "gold": [
+        "NICE-POST-01",
+        "ISH-POST-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-POST-01": 1,
+          "NICE-POST-01": 3
+        },
+        "dense": {
+          "ISH-POST-01": 4,
+          "NICE-POST-01": 1
+        },
+        "hybrid": {
+          "ISH-POST-01": 2,
+          "NICE-POST-01": 1
+        },
+        "named_sources": {
+          "ISH-POST-01": 2,
+          "NICE-POST-01": 1
+        }
+      }
+    },
+    {
+      "id": "T12",
+      "complexity": "multi",
+      "query": "USPSTF的筛查建议适用于哪类成人，何时须进行诊室外确认？",
+      "gold": [
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "USP-POP-01": 2,
+          "USP-SCREEN-01": 3
+        },
+        "dense": {
+          "USP-POP-01": 2,
+          "USP-SCREEN-01": 1
+        },
+        "hybrid": {
+          "USP-POP-01": 2,
+          "USP-SCREEN-01": 1
+        },
+        "named_sources": {
+          "USP-POP-01": 2,
+          "USP-SCREEN-01": 1
+        }
+      }
+    },
+    {
+      "id": "T13",
+      "complexity": "multi",
+      "query": "NICE与AHA/ACC的140/90诊室值分别对应怎样的诊断外部测量阈值？",
+      "gold": [
+        "NICE-DX-07",
+        "AHA-THRESH-02"
+      ],
+      "ranks": {
+        "lexical": {
+          "AHA-THRESH-02": 1,
+          "NICE-DX-07": 3
+        },
+        "dense": {
+          "AHA-THRESH-02": 2,
+          "NICE-DX-07": 1
+        },
+        "hybrid": {
+          "AHA-THRESH-02": 1,
+          "NICE-DX-07": 2
+        },
+        "named_sources": {
+          "AHA-THRESH-02": 1,
+          "NICE-DX-07": 2
+        }
+      }
+    },
+    {
+      "id": "T14",
+      "complexity": "single",
+      "query": "综述里诊室确认测量的准确性结果，敏感度与特异度各多少？",
+      "gold": [
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "REV-OFFICE-CONFIRM-01": 1
+        },
+        "dense": {
+          "REV-OFFICE-CONFIRM-01": 1
+        },
+        "hybrid": {
+          "REV-OFFICE-CONFIRM-01": 1
+        },
+        "named_sources": {
+          "REV-OFFICE-CONFIRM-01": 1
+        }
+      }
+    },
+    {
+      "id": "T15",
+      "complexity": "multi",
+      "query": "USPSTF综述比较诊室初筛与诊室确诊时，二者的敏感度和特异度各是多少？",
+      "gold": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "REV-OFFICE-01": 2,
+          "REV-OFFICE-CONFIRM-01": 1
+        },
+        "dense": {
+          "REV-OFFICE-01": 1,
+          "REV-OFFICE-CONFIRM-01": 2
+        },
+        "hybrid": {
+          "REV-OFFICE-01": 2,
+          "REV-OFFICE-CONFIRM-01": 1
+        },
+        "named_sources": {
+          "REV-OFFICE-01": 2,
+          "REV-OFFICE-CONFIRM-01": 1
+        }
+      }
+    },
+    {
+      "id": "T16",
+      "complexity": "single",
+      "query": "USPSTF证据综述观察到ABPM的哪些短期不适？",
+      "gold": [
+        "REV-HARM-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "REV-HARM-01": 2
+        },
+        "dense": {
+          "REV-HARM-01": 1
+        },
+        "hybrid": {
+          "REV-HARM-01": 1
+        },
+        "named_sources": {
+          "REV-HARM-01": 1
+        }
+      }
+    },
+    {
+      "id": "T19",
+      "complexity": "single",
+      "query": "NICE诊室读数180/120且合并新发意识混乱，应如何分流？",
+      "gold": [
+        "NICE-URGENT-02"
+      ],
+      "ranks": {
+        "lexical": {
+          "NICE-URGENT-02": 1
+        },
+        "dense": {
+          "NICE-URGENT-02": 1
+        },
+        "hybrid": {
+          "NICE-URGENT-02": 1
+        },
+        "named_sources": {
+          "NICE-URGENT-02": 1
+        }
+      }
+    },
+    {
+      "id": "T20",
+      "complexity": "single",
+      "query": "NICE对成人高血压患者用ABPM或HBPM监测反应时，应取哪个时段的平均值？",
+      "gold": [
+        "NICE-MONITOR-01"
+      ],
+      "ranks": {
+        "lexical": {
+          "NICE-MONITOR-01": 1
+        },
+        "dense": {
+          "NICE-MONITOR-01": 1
+        },
+        "hybrid": {
+          "NICE-MONITOR-01": 1
+        },
+        "named_sources": {
+          "NICE-MONITOR-01": 1
+        }
+      }
+    },
+    {
+      "id": "T21",
+      "complexity": "single",
+      "query": "2025 AHA/ACC规定的第1期阈值是否以收缩压和舒张压同时超标为条件？",
+      "gold": [
+        "AHA-CLASS-03"
+      ],
+      "ranks": {
+        "lexical": {
+          "AHA-CLASS-03": 1
+        },
+        "dense": {
+          "AHA-CLASS-03": 1
+        },
+        "hybrid": {
+          "AHA-CLASS-03": 1
+        },
+        "named_sources": {
+          "AHA-CLASS-03": 1
+        }
+      }
+    },
+    {
+      "id": "T22",
+      "complexity": "multi",
+      "query": "NICE与ISH对未诊断成人的证据性家庭阈值是否相同？请分别给出收缩压或舒张压界值。",
+      "gold": [
+        "NICE-DX-07",
+        "ISH-HOME-03"
+      ],
+      "ranks": {
+        "lexical": {
+          "ISH-HOME-03": 1,
+          "NICE-DX-07": 23
+        },
+        "dense": {
+          "ISH-HOME-03": 3,
+          "NICE-DX-07": 1
+        },
+        "hybrid": {
+          "ISH-HOME-03": 1,
+          "NICE-DX-07": 3
+        },
+        "named_sources": {
+          "ISH-HOME-03": 1,
+          "NICE-DX-07": 3
+        }
+      }
+    }
+  ]
+}

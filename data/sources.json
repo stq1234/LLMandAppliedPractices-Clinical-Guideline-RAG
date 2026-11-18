@@ -1,0 +1,63 @@
+[
+  {
+    "source_id": "NICE_NG136",
+    "authority": "National Institute for Health and Care Excellence (NICE)",
+    "title": "Hypertension in adults: diagnosis and management",
+    "version": "NG136; published 2019-08-28; last updated 2026-02-26; current source page checked 2026-11-18",
+    "url": "https://www.nice.org.uk/guidance/ng136/chapter/recommendations",
+    "update_url": "https://www.nice.org.uk/guidance/ng136/chapter/update-information",
+    "current_check": "NICE search-indexed recommendation and update pages plus 2026 guideline PDF; search page reports a February 2026 recommendation addition. The update page also lists an October 2026 wording clarification to 1.4.26, outside this diagnostic corpus.",
+    "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline."
+  },
+  {
+    "source_id": "AHA_ACC_2025",
+    "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+    "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+    "version": "Circulation 2025;152:e114–e218; published 2025-09-16; online version includes corrections dated 2025-11-10 and 2026-05-26; checked 2026-11-18",
+    "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001356",
+    "correction_urls": [
+      "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001396",
+      "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001448"
+    ],
+    "current_check": "The official online guideline is the 2025 adult guideline and retires the 2017 guideline. Its linked corrections affect introductory/resistant-hypertension and emergency-drug passages, not the measurement/classification facts used here.",
+    "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections."
+  },
+  {
+    "source_id": "ISH_GLOBAL_2026",
+    "authority": "International Society of Hypertension (ISH)",
+    "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+    "version": "Journal of Hypertension 2026;44(12):2157–2188; published online 2026-10-20; checked 2026-11-18",
+    "url": "https://doi.org/10.1097/HJH.0000000000004451",
+    "current_check": "New global practice guideline; online article metadata and full indexed sections/tables were read. Issue date is December 2026; corpus freeze precedes the issue month but follows online publication.",
+    "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set."
+  },
+  {
+    "source_id": "USPSTF_SCREEN_2021",
+    "authority": "U.S. Preventive Services Task Force (USPSTF)",
+    "title": "Hypertension in Adults: Screening — Final Recommendation Statement",
+    "version": "Final recommendation dated 2021-04-27; current USPSTF topic page checked 2026-11-18 and remains the published recommendation",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/hypertension-in-adults-screening/",
+    "current_check": "The USPSTF topic search lists the 2021 recommendation as published; the current recommendations-in-progress listing does not list an adult hypertension-screening update.",
+    "population": "Adults aged 18 years and older without known hypertension; this screening recommendation does not cover children/adolescents or known hypertension follow-up."
+  },
+  {
+    "source_id": "USPSTF_REVIEW_2021",
+    "authority": "USPSTF-commissioned evidence review; Agency for Healthcare Research and Quality (AHRQ)",
+    "title": "Screening for Hypertension in Adults: Updated Evidence Report and Systematic Review for the U.S. Preventive Services Task Force",
+    "version": "JAMA 2021;325(16):1657–1669; published 2021-04-27; evidence surveillance through 2021-03-26",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/document/final-evidence-summary/hypertension-in-adults-screening",
+    "bibliographic_url": "https://pubmed.ncbi.nlm.nih.gov/33904862/",
+    "current_check": "Full evidence-summary article and PubMed record read. This is an evidence synthesis, not a clinical guideline or a source of universal diagnostic thresholds.",
+    "population": "Review of screening/confirmation accuracy in adults; included accuracy studies enrolled untreated adults or stratified by treatment and were conducted in very-high-HDI countries."
+  },
+  {
+    "source_id": "JAHA_AOBP_REVIEW_2025",
+    "authority": "Journal of the American Heart Association; independent systematic review/meta-analysis",
+    "title": "Revisiting Unattended Versus Attended Automated Office Blood Pressure Measurements: A Systematic Review and Meta-Analysis",
+    "version": "J Am Heart Assoc. 2025;14(24):e042797; epub 2025-12-11; issue 2025-12-16; checked 2026-11-18",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41378509/",
+    "doi_url": "https://doi.org/10.1161/JAHA.125.042797",
+    "current_check": "PubMed abstract and linked free PMC article read; no newer correction was found in the record checked on 2026-11-18.",
+    "population": "Adult participants in same-device, same-protocol attended/unattended automated office BP comparisons; this synthesis is not a hypertension diagnostic-threshold guideline."
+  }
+]

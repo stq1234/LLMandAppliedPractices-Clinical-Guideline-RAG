@@ -1,0 +1,20 @@
+{
+  "questions_file": "/home/shaotianqi/LLM/hw7_3_clinical_rag/data/challenge_questions.jsonl",
+  "question_sha256": "9a773675c77ffc4223dc9737eb9dd819267898864f40f9ad826c79e21e6a62a3",
+  "evidence_sha256": "b86a5d9e7803cd1ce6e08ceda7db5e3ad8db65cc08daba4ecc854bb70b71d703",
+  "engine_file": "/home/shaotianqi/LLM/hw7_3_clinical_rag/improved_clinical.py",
+  "engine_sha256": "e168fb2006de823de96d058f5698235463d050352d5ad1899314898221008fc8",
+  "engine_version": "extended:0.2.0:e168fb2006de823de96d058f5698235463d050352d5ad1899314898221008fc8",
+  "split": "challenge",
+  "modes": [
+    "single",
+    "multi",
+    "adaptive",
+    "adaptive_nocrit"
+  ],
+  "workers": 2,
+  "selected_questions": 24,
+  "scheduled": 96,
+  "params": {},
+  "output": "/home/shaotianqi/LLM/hw7_3_clinical_rag/results/extended_challenge_modes.jsonl"
+}

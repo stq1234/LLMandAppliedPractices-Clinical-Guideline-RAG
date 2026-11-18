@@ -1,0 +1,19 @@
+{
+  "split": "test",
+  "modes": [
+    "multi",
+    "adaptive",
+    "adaptive_nocrit"
+  ],
+  "workers": 3,
+  "questions": 1,
+  "tasks_scheduled": 3,
+  "question_sha256": "526955c72440911f4109a68e267361d0c9fc645d4680756426eb537d5c7b6bfb",
+  "evidence_sha256": "b86a5d9e7803cd1ce6e08ceda7db5e3ad8db65cc08daba4ecc854bb70b71d703",
+  "params": null,
+  "elapsed_seconds": 24.509273289935663,
+  "python": "3.11.18 (main, Oct 26 2026, 11:35:17) [GCC 15.3.0]",
+  "chat_model": "qwen3.6-35b-a3b",
+  "chat_replay_cache": null,
+  "replay_backend": false
+}

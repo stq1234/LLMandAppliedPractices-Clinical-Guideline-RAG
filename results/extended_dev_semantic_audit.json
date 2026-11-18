@@ -1,0 +1,2716 @@
+{
+  "scope": "lexical screening, not clinical semantic adjudication",
+  "limitations": "Literal expected-phrase matching can miss valid paraphrases and can pass a phrase without checking negation, attribution to the correct authority, threshold direction, units, or interactions. Numeric expressions and authority/direction terms are extraction aids; human verification must compare each answer against its frozen gold evidence. Gold labels are unchanged.",
+  "n": 36,
+  "rows": [
+    {
+      "id": "D01",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "classification",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "按2025 AHA/ACC成人指南，收缩压133、舒张压76 mmHg属于哪个类别？",
+      "answer": "根据2025 AHA/ACC成人指南，收缩压133 mmHg属于第1期高血压类别。 [AHA-CLASS-03]",
+      "gold_ids": [
+        "AHA-CLASS-03"
+      ],
+      "gold_sources": [
+        "AHA_ACC_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 2; Table 4",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "AHA/ACC第1期高血压为收缩压130–139 mmHg或舒张压80–89 mmHg。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "第1期高血压",
+            "Stage 1 hypertension"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "1"
+      ],
+      "answer_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "query_key_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "Stage 1",
+        "hypertension"
+      ],
+      "citation_ids": [
+        "AHA-CLASS-03"
+      ],
+      "evidence_ids": [
+        "AHA-CLASS-01",
+        "AHA-CLASS-02",
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "ISH-CLASS-01"
+      ]
+    },
+    {
+      "id": "D02",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "NICE要求血压设备满足哪些基本维护条件？",
+      "answer": "NICE指南要求血压设备应经过适当验证和维护。 [NICE-MEAS-03]\nNICE指南要求血压设备应按制造商说明定期重新校准。 [NICE-MEAS-03]",
+      "gold_ids": [
+        "NICE-MEAS-03"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.1.3",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "血压设备应经适当验证、维护，并按制造商说明定期重新校准。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "验证",
+            "经验证"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "定期校准",
+            "按制造商说明重新校准"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "NICE-MEAS-03"
+      ],
+      "evidence_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07",
+        "NICE-MEAS-02",
+        "NICE-MEAS-03",
+        "NICE-MEAS-04"
+      ]
+    },
+    {
+      "id": "D04",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "按NICE，哪些人群的高血压评估应检查体位性低血压？",
+      "answer": "根据NICE指南，已诊断高血压且合并2型糖尿病的人群在评估时应检查体位性低血压。 [NICE-POST-04]\n根据NICE指南，已诊断高血压且有体位性低血压症状的人群在评估时应检查体位性低血压。 [NICE-POST-04]\n根据NICE指南，已诊断高血压且年龄≥80岁的人群在评估时应检查体位性低血压。 [NICE-POST-04]",
+      "gold_ids": [
+        "NICE-POST-04"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.4.16",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "已诊断高血压者若合并2型糖尿病、体位性低血压症状或年龄≥80岁，应检查体位性低血压。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "2型糖尿病",
+            "type 2 diabetes"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "体位性低血压症状",
+            "postural hypotension symptoms"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 3,
+          "acceptable_phrases": [
+            "80岁及以上",
+            "≥80岁"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "80"
+      ],
+      "query_or_key_numeric_expressions": [
+        "2",
+        "80",
+        "≥80"
+      ],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "NICE-POST-04"
+      ],
+      "evidence_ids": [
+        "NICE-POST-04"
+      ]
+    },
+    {
+      "id": "D03",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "evidence_review",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "相对ABPM参考标准，初筛诊室测量和家庭确诊测量的汇总敏感度、特异度各是多少？",
+      "answer": "在成人高血压筛查与确诊准确性的系统综述中，以ABPM为参考标准，15项初筛诊室测量研究的汇总敏感度为0.54（95% CI 0.37–0.70），特异度为0.90（0.84–0.95）。 [REV-OFFICE-01]\n在成人高血压筛查与确诊准确性的系统综述中，以ABPM为参考标准，4项家庭确诊测量研究的汇总敏感度为0.84（95% CI 0.76–0.90），特异度为0.60（0.48–0.71）。 [REV-HOME-01]",
+      "gold_ids": [
+        "REV-OFFICE-01",
+        "REV-HOME-01"
+      ],
+      "gold_sources": [
+        "USPSTF_REVIEW_2021",
+        "USPSTF_REVIEW_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Screening for Hypertension in Adults: Updated Evidence Report and Systematic Review for the U.S. Preventive Services Task Force",
+          "locator": "Abstract—Results; initial office-based screening",
+          "source_id": "USPSTF_REVIEW_2021",
+          "authority": "USPSTF-commissioned evidence review; Agency for Healthcare Research and Quality (AHRQ)",
+          "population": "Review of screening/confirmation accuracy in adults; included accuracy studies enrolled untreated adults or stratified by treatment and were conducted in very-high-HDI countries.",
+          "text": "15项研究（n=11,309）初筛诊室测量的汇总敏感度为0.54（95% CI 0.37–0.70），特异度为0.90（0.84–0.95）；研究间存在显著临床和统计异质性。"
+        },
+        {
+          "title": "Screening for Hypertension in Adults: Updated Evidence Report and Systematic Review for the U.S. Preventive Services Task Force",
+          "locator": "Abstract—Results; home-based confirmation",
+          "source_id": "USPSTF_REVIEW_2021",
+          "authority": "USPSTF-commissioned evidence review; Agency for Healthcare Research and Quality (AHRQ)",
+          "population": "Review of screening/confirmation accuracy in adults; included accuracy studies enrolled untreated adults or stratified by treatment and were conducted in very-high-HDI countries.",
+          "text": "4项家庭确诊测量研究（n=1,001）的汇总敏感度为0.84（95% CI 0.76–0.90），特异度为0.60（0.48–0.71）。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "初筛诊室：敏感度0.54、特异度0.90",
+            "office screen 0.54/0.90"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "家庭确诊：敏感度0.84、特异度0.60",
+            "home confirmation 0.84/0.60"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "0.37–0.70",
+        "0.48–0.71",
+        "0.76–0.90",
+        "0.84–0.95",
+        "15",
+        "4",
+        "95%"
+      ],
+      "query_or_key_numeric_expressions": [
+        "0.37–0.70",
+        "0.48–0.71",
+        "0.54/0.90",
+        "0.76–0.90",
+        "0.84/0.60",
+        "0.84–0.95",
+        "15",
+        "4",
+        "95%"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "REV-HOME-01",
+        "REV-OFFICE-01"
+      ],
+      "evidence_ids": [
+        "AHA-OUT-01",
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "REV-SCOPE-01"
+      ]
+    },
+    {
+      "id": "D07",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "confirmation",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "NICE在等待高血压确诊时，先后安排哪两项评估？",
+      "answer": "在等待高血压确诊期间，NICE指南建议先检查靶器官损害。 [NICE-DX-06]\n在等待高血压确诊期间，NICE指南建议随后进行正式心血管风险评估。 [NICE-DX-06]",
+      "gold_ids": [
+        "NICE-DX-06"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.2.5",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "等待诊断确认期间，先检查靶器官损害，再进行正式心血管风险评估。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "先检查靶器官损害",
+            "target organ damage first"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "再正式评估心血管风险",
+            "then formal cardiovascular risk"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [
+        "建议"
+      ],
+      "query_key_direction_terms": [
+        "建议"
+      ],
+      "citation_ids": [
+        "NICE-DX-06"
+      ],
+      "evidence_ids": [
+        "NICE-CLASS-01",
+        "NICE-DX-01",
+        "NICE-DX-04",
+        "NICE-DX-06",
+        "NICE-DX-07",
+        "NICE-DX-08"
+      ]
+    },
+    {
+      "id": "D08",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "confirmation",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "NICE何时优先提供ABPM，何种情况下可改用HBPM？",
+      "answer": "对于18岁及以上成人，当诊室血压处于140/90至180/120 mmHg区间时，NICE指南优先提供动态血压监测（ABPM）以确认高血压诊断。 [NICE-DX-04]\n若ABPM不合适或受测者不能耐受，NICE指南建议可提供家庭血压监测（HBPM）来确认诊断。 [NICE-DX-05]",
+      "gold_ids": [
+        "NICE-DX-04",
+        "NICE-DX-05"
+      ],
+      "gold_sources": [
+        "NICE_NG136",
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.2.3",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "诊室血压处于140/90至180/120 mmHg区间时，提供动态血压监测（ABPM）以确认诊断；达到严重血压范围时另按1.5节分流。"
+        },
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.2.4",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "若ABPM不合适或受测者不能耐受，可提供家庭血压监测（HBPM）确认诊断。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "诊室140/90至180/120 mmHg提供ABPM",
+            "140/90–180/120时ABPM"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "ABPM不合适或不能耐受时HBPM",
+            "不能耐受ABPM时用HBPM"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "90至180/120 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "120",
+        "140/90–180",
+        "90至180/120 mmHg"
+      ],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [
+        "优先",
+        "可提供",
+        "建议"
+      ],
+      "query_key_direction_terms": [
+        "优先",
+        "可提供",
+        "建议"
+      ],
+      "citation_ids": [
+        "NICE-DX-04",
+        "NICE-DX-05"
+      ],
+      "evidence_ids": [
+        "NICE-DX-04",
+        "NICE-DX-05",
+        "NICE-DX-07",
+        "NICE-HBPM-01",
+        "NICE-MONITOR-01"
+      ]
+    },
+    {
+      "id": "D09",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "confirmation",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "NICE用多少个清醒时段ABPM读数确认诊断，且每小时至少几次？",
+      "answer": "NICE指南规定，使用动态血压监测（ABPM）确认高血压诊断时，通常清醒时段每小时至少取得2次测量。 [NICE-ABPM-01]\nNICE指南规定，使用动态血压监测（ABPM）确认高血压诊断时，需以通常清醒时段至少14次读数的平均值进行确认。 [NICE-ABPM-01]",
+      "gold_ids": [
+        "NICE-ABPM-01"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.2.6",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "ABPM确认时，通常清醒时段每小时至少取得2次测量，并以通常清醒时段至少14次读数的平均值确认。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "至少14次读数的平均值",
+            "≥14次读数平均"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "每小时至少2次",
+            "≥2次/小时"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "≥14次",
+        "≥2次"
+      ],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [
+        "至少"
+      ],
+      "query_key_direction_terms": [
+        "至少"
+      ],
+      "citation_ids": [
+        "NICE-ABPM-01"
+      ],
+      "evidence_ids": [
+        "NICE-ABPM-01",
+        "NICE-DX-04",
+        "NICE-DX-05",
+        "NICE-DX-07",
+        "NICE-HBPM-02"
+      ]
+    },
+    {
+      "id": "D10",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "confirmation",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "未达到NICE高血压诊断但存在靶器官损害时，后续需要考虑什么？",
+      "answer": "对于未达到高血压诊断但已有靶器官损害证据的成人，可调查该损害的其他可能原因。 [NICE-DX-08]",
+      "gold_ids": [
+        "NICE-DX-08"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.2.9",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "未达到高血压诊断，但已有靶器官损害证据时，可调查该损害的其他可能原因。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "调查靶器官损害的其他可能原因",
+            "investigate alternative causes"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "NICE-DX-08"
+      ],
+      "evidence_ids": [
+        "NICE-CLASS-02",
+        "NICE-DX-06",
+        "NICE-DX-07",
+        "NICE-DX-08",
+        "NICE-URGENT-01"
+      ]
+    },
+    {
+      "id": "D11",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "confirmation",
+      "status": "ok",
+      "abstain": true,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "对NICE家庭确诊读数，每次测几次、一天几次，间隔多久？",
+      "answer": "现有获准指南证据未能逐项支持该问题所需事实，因此暂不作答。",
+      "gold_ids": [
+        "NICE-HBPM-01"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.2.7",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "HBPM每次记录做连续两次测量，间隔至少1分钟且受测者坐位；每天测两次，理想安排为早晨和晚上。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "每次连续2次",
+            "每次两次"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "间隔至少1分钟",
+            "至少间隔1分钟"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 3,
+          "acceptable_phrases": [
+            "每天2次，早晚为宜",
+            "每日早晚各一次"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "至少"
+      ],
+      "citation_ids": [],
+      "evidence_ids": [
+        "NICE-ABPM-01",
+        "NICE-DX-05",
+        "NICE-DX-09",
+        "NICE-HBPM-01",
+        "NICE-HBPM-02"
+      ]
+    },
+    {
+      "id": "D12",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "classification",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "NICE确诊标准如何组合诊室与诊室外数值？",
+      "answer": "NICE指南中，确诊高血压的组合阈值为诊室血压≥140/90 mmHg，且ABPM清醒时段平均值或HBPM平均值≥135/85 mmHg。 [NICE-DX-07]\nNICE第1期高血压标准同时要求诊室血压在140/90至159/99 mmHg之间，且ABPM清醒均值或HBPM均值在135/85至149/94 mmHg之间。 [NICE-CLASS-01]\nNICE第2期高血压标准同时要求诊室血压≥160/100且<180/120 mmHg，且ABPM清醒均值或HBPM均值≥150/95 mmHg。 [NICE-CLASS-02]",
+      "gold_ids": [
+        "NICE-DX-07"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.2.8",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "NICE确认高血压的组合阈值为：诊室≥140/90 mmHg，且ABPM清醒时段平均值或HBPM平均值≥135/85 mmHg。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "诊室≥140/90 mmHg",
+            "诊室140/90或以上"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "ABPM清醒均值或HBPM均值≥135/85 mmHg",
+            "诊室外平均135/85或以上"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "135/85 mmHg",
+        "140/90 mmHg",
+        "150/95 mmHg",
+        "160/100",
+        "180/120 mmHg",
+        "85至149/94 mmHg",
+        "90至159/99 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "135/85 mmHg",
+        "140/90 mmHg",
+        "150/95 mmHg",
+        "160/100",
+        "180/120 mmHg",
+        "85",
+        "85至149/94 mmHg",
+        "90",
+        "90至159/99 mmHg"
+      ],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07"
+      ],
+      "evidence_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-07",
+        "NICE-MEAS-04"
+      ]
+    },
+    {
+      "id": "D14",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "screening",
+      "status": "ok",
+      "abstain": true,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "USPSTF证据综述覆盖的机构高血压定义阈值范围是多少？该建议是否自行规定统一界值？",
+      "answer": "现有获准指南证据未能逐项支持该问题所需事实，因此暂不作答。",
+      "gold_ids": [
+        "USP-BOUNDARY-01"
+      ],
+      "gold_sources": [
+        "USPSTF_SCREEN_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in Adults: Screening — Final Recommendation Statement",
+          "locator": "Recommendation Summary; Definitions",
+          "source_id": "USPSTF_SCREEN_2021",
+          "authority": "U.S. Preventive Services Task Force (USPSTF)",
+          "population": "Adults aged 18 years and older without known hypertension; this screening recommendation does not cover children/adolescents or known hypertension follow-up.",
+          "text": "这项USPSTF建议是成人筛查建议，所审研究采用的高血压定义阈值不一；它没有规定一个适用于所有机构的统一诊断阈值。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "各机构约从130/80到140/90 mmHg",
+            "130/80至140/90"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "没有给出统一诊断阈值",
+            "未规定统一cutoff"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "130/80至140",
+        "80到140/90 mmHg",
+        "90"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "USPSTF"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "建议"
+      ],
+      "citation_ids": [],
+      "evidence_ids": [
+        "REV-SCOPE-01",
+        "REV-SIZE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ]
+    },
+    {
+      "id": "D15",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "screening",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "USPSTF所说的较低风险18–39岁成人，合理复筛间隔是什么？",
+      "answer": "根据美国预防服务工作组（USPSTF）2021年的指南，对于18–39岁、无高风险且先前血压读数正常的成人，合理的筛查间隔为每3–5年一次。 [USP-INTERVAL-01]",
+      "gold_ids": [
+        "USP-INTERVAL-01"
+      ],
+      "gold_sources": [
+        "USPSTF_SCREEN_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in Adults: Screening — Final Recommendation Statement",
+          "locator": "Clinician Summary; Screening Intervals",
+          "source_id": "USPSTF_SCREEN_2021",
+          "authority": "U.S. Preventive Services Task Force (USPSTF)",
+          "population": "Adults aged 18 years and older without known hypertension; this screening recommendation does not cover children/adolescents or known hypertension follow-up.",
+          "text": "USPSTF称最佳筛查间隔证据有限；合理选项包括≥40岁或高风险成人每年筛查，18–39岁、无高风险且先前读数正常者每3–5年筛查。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "每3–5年",
+            "3至5年一次"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "2021年",
+        "39",
+        "5年"
+      ],
+      "query_or_key_numeric_expressions": [
+        "2021年",
+        "39",
+        "3至5年",
+        "5年"
+      ],
+      "answer_authority_mentions": [
+        "USPSTF"
+      ],
+      "query_key_authority_mentions": [
+        "USPSTF"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "USP-INTERVAL-01"
+      ],
+      "evidence_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-INTERVAL-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ]
+    },
+    {
+      "id": "D16",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "screening",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "USPSTF建议什么年龄或风险条件下每年筛查？",
+      "answer": "对于40岁及以上或具有高血压高风险的成人，USPSTF认为每年筛查是合理的选项之一。 [USP-INTERVAL-01]\nUSPSTF指出关于最佳筛查间隔的证据有限。 [USP-INTERVAL-01]",
+      "gold_ids": [
+        "USP-INTERVAL-01"
+      ],
+      "gold_sources": [
+        "USPSTF_SCREEN_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in Adults: Screening — Final Recommendation Statement",
+          "locator": "Clinician Summary; Screening Intervals",
+          "source_id": "USPSTF_SCREEN_2021",
+          "authority": "U.S. Preventive Services Task Force (USPSTF)",
+          "population": "Adults aged 18 years and older without known hypertension; this screening recommendation does not cover children/adolescents or known hypertension follow-up.",
+          "text": "USPSTF称最佳筛查间隔证据有限；合理选项包括≥40岁或高风险成人每年筛查，18–39岁、无高风险且先前读数正常者每3–5年筛查。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "≥40岁",
+            "40岁及以上"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "高风险成人",
+            "风险升高者"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "40",
+        "≥40"
+      ],
+      "answer_authority_mentions": [
+        "USPSTF"
+      ],
+      "query_key_authority_mentions": [
+        "USPSTF"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "建议"
+      ],
+      "citation_ids": [
+        "USP-INTERVAL-01"
+      ],
+      "evidence_ids": [
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-INTERVAL-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ]
+    },
+    {
+      "id": "D13",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "classification",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "NICE第1期与第2期诊断分别要求什么诊室外均值？",
+      "answer": "NICE指南中第1期高血压的诊断要求诊室血压为140/90至159/99 mmHg。 [NICE-CLASS-01]\nNICE指南中第1期高血压的诊断要求ABPM清醒均值或HBPM均值为135/85至149/94 mmHg。 [NICE-CLASS-01]\nNICE指南中第2期高血压的诊断要求诊室血压≥160/100且<180/120 mmHg。 [NICE-CLASS-02]\nNICE指南中第2期高血压的诊断要求ABPM清醒均值或HBPM均值≥150/95 mmHg。 [NICE-CLASS-02]",
+      "gold_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02"
+      ],
+      "gold_sources": [
+        "NICE_NG136",
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Terms used; Stage 1 hypertension",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "NICE第1期标准同时要求：诊室140/90至159/99 mmHg，且ABPM清醒均值或HBPM均值135/85至149/94 mmHg。"
+        },
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Terms used; Stage 2 hypertension",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "NICE第2期标准同时要求：诊室≥160/100且<180/120 mmHg，且ABPM清醒均值或HBPM均值≥150/95 mmHg。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "第1期：135/85至149/94 mmHg",
+            "Stage 1: 135/85–149/94"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "第2期：≥150/95 mmHg",
+            "Stage 2: 150/95或以上"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "150/95 mmHg",
+        "160/100",
+        "180/120 mmHg",
+        "85至149/94 mmHg",
+        "90至159/99 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "1",
+        "135/85–149",
+        "135/85至149",
+        "150/95",
+        "150/95 mmHg",
+        "160/100",
+        "180/120 mmHg",
+        "2",
+        "85至149/94 mmHg",
+        "90至159/99 mmHg",
+        "94",
+        "94 mmHg",
+        "≥150/95 mmHg"
+      ],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "Stage 1",
+        "Stage 2"
+      ],
+      "citation_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02"
+      ],
+      "evidence_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-04",
+        "NICE-DX-07",
+        "NICE-HBPM-02"
+      ]
+    },
+    {
+      "id": "D17",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": true,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "按USPSTF摘要，筛查时设备、部位、姿势与休息条件是什么？",
+      "answer": "现有获准指南证据未能逐项支持该问题所需事实，因此暂不作答。",
+      "gold_ids": [
+        "USP-PREP-01"
+      ],
+      "gold_sources": [
+        "USPSTF_SCREEN_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in Adults: Screening — Final Recommendation Statement",
+          "locator": "Clinician Summary; Screening Tests",
+          "source_id": "USPSTF_SCREEN_2021",
+          "authority": "U.S. Preventive Services Task Force (USPSTF)",
+          "population": "Adults aged 18 years and older without known hypertension; this screening recommendation does not cover children/adolescents or known hypertension follow-up.",
+          "text": "筛查测量应使用经验证且准确的设备，在上臂肱动脉处、坐位安静休息5分钟后完成。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "经验证且准确的设备",
+            "validated accurate device"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "上臂肱动脉，坐位",
+            "upper arm brachial artery, seated"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 3,
+          "acceptable_phrases": [
+            "休息5分钟",
+            "5 min rest"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "5"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "USPSTF"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [],
+      "evidence_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-HBPM-01",
+        "USP-PREP-01",
+        "USP-SCREEN-01"
+      ]
+    },
+    {
+      "id": "D19",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "evidence_review",
+      "status": "ok",
+      "abstain": true,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "USPSTF系统综述的确诊准确性研究采用什么参考标准，通常纳入何种治疗状态成人？",
+      "answer": "本系统仅回答一般性的成人血压测量与诊断指南问题，不提供个人诊断、治疗或用药建议。",
+      "gold_ids": [
+        "REV-SCOPE-01"
+      ],
+      "gold_sources": [
+        "USPSTF_REVIEW_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Screening for Hypertension in Adults: Updated Evidence Report and Systematic Review for the U.S. Preventive Services Task Force",
+          "locator": "Abstract; Methods—Study Selection",
+          "source_id": "USPSTF_REVIEW_2021",
+          "authority": "USPSTF-commissioned evidence review; Agency for Healthcare Research and Quality (AHRQ)",
+          "population": "Review of screening/confirmation accuracy in adults; included accuracy studies enrolled untreated adults or stratified by treatment and were conducted in very-high-HDI countries.",
+          "text": "系统综述评估成人高血压筛查与确诊测量；纳入未治疗成人或按治疗状态分层研究，确认准确性研究以ABPM为参考标准。检索监测截至2021-03-26。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "ABPM参考标准",
+            "ABPM作为reference standard"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "未治疗成人或按治疗状态分层",
+            "untreated or stratified by treatment"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "USPSTF"
+      ],
+      "answer_direction_terms": [
+        "建议"
+      ],
+      "query_key_direction_terms": [
+        "建议"
+      ],
+      "citation_ids": [],
+      "evidence_ids": []
+    },
+    {
+      "id": "D18",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "screening",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "USPSTF描述的ABPM大致多久测一次、连续多久？",
+      "answer": "根据美国预防服务工作组（USPSTF）2021年发布的指南，动态血压监测（ABPM）通常在日常活动或睡眠期间每20–30分钟自动测量一次。 [USP-ABPM-01]\n根据美国预防服务工作组（USPSTF）2021年发布的指南，动态血压监测（ABPM）的持续时间为12–24小时。 [USP-ABPM-01]",
+      "gold_ids": [
+        "USP-ABPM-01"
+      ],
+      "gold_sources": [
+        "USPSTF_SCREEN_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in Adults: Screening — Final Recommendation Statement",
+          "locator": "Clinician Summary; Screening Tests",
+          "source_id": "USPSTF_SCREEN_2021",
+          "authority": "U.S. Preventive Services Task Force (USPSTF)",
+          "population": "Adults aged 18 years and older without known hypertension; this screening recommendation does not cover children/adolescents or known hypertension follow-up.",
+          "text": "USPSTF描述的ABPM使用可编程便携设备，通常在日常活动或睡眠期间每20–30分钟自动测量，持续12–24小时。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "每20–30分钟",
+            "20至30分钟一次"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "12–24小时",
+            "持续12至24小时"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "2021年",
+        "24小时",
+        "30分钟"
+      ],
+      "query_or_key_numeric_expressions": [
+        "12–24小时",
+        "2021年",
+        "20至30分钟",
+        "24小时",
+        "30分钟"
+      ],
+      "answer_authority_mentions": [
+        "USPSTF"
+      ],
+      "query_key_authority_mentions": [
+        "USPSTF"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "USP-ABPM-01"
+      ],
+      "evidence_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-HBPM-01",
+        "USP-SCREEN-01"
+      ]
+    },
+    {
+      "id": "D20",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "evidence_review",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "该系统综述的家庭确诊测量敏感度/特异度是多少，来自多少项研究？",
+      "answer": "该系统综述纳入4项家庭确诊测量研究。 [REV-HOME-01]\n这4项家庭确诊测量研究的汇总敏感度为0.84（95% CI 0.76–0.90）。 [REV-HOME-01]\n这4项家庭确诊测量研究的汇总特异度为0.60（95% CI 0.48–0.71）。 [REV-HOME-01]",
+      "gold_ids": [
+        "REV-HOME-01"
+      ],
+      "gold_sources": [
+        "USPSTF_REVIEW_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Screening for Hypertension in Adults: Updated Evidence Report and Systematic Review for the U.S. Preventive Services Task Force",
+          "locator": "Abstract—Results; home-based confirmation",
+          "source_id": "USPSTF_REVIEW_2021",
+          "authority": "USPSTF-commissioned evidence review; Agency for Healthcare Research and Quality (AHRQ)",
+          "population": "Review of screening/confirmation accuracy in adults; included accuracy studies enrolled untreated adults or stratified by treatment and were conducted in very-high-HDI countries.",
+          "text": "4项家庭确诊测量研究（n=1,001）的汇总敏感度为0.84（95% CI 0.76–0.90），特异度为0.60（0.48–0.71）。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "敏感度0.84",
+            "84%"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "特异度0.60",
+            "60%"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 3,
+          "acceptable_phrases": [
+            "4项研究",
+            "4 studies"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "0.48–0.71",
+        "0.76–0.90",
+        "95%"
+      ],
+      "query_or_key_numeric_expressions": [
+        "0.48–0.71",
+        "0.76–0.90",
+        "4",
+        "60%",
+        "84%",
+        "95%"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "REV-HOME-01"
+      ],
+      "evidence_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "REV-SCOPE-01",
+        "REV-SIZE-01"
+      ]
+    },
+    {
+      "id": "D21",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "classification",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "AHA/ACC成人第2期高血压的收缩压或舒张压界值是什么？",
+      "answer": "根据2025年AHA/ACC成人高血压预防、检测、评估和管理指南，第2期高血压定义为收缩压≥140 mmHg或舒张压≥90 mmHg。 [AHA-CLASS-04]",
+      "gold_ids": [
+        "AHA-CLASS-04"
+      ],
+      "gold_sources": [
+        "AHA_ACC_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 2; Table 4",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "AHA/ACC第2期高血压为收缩压≥140 mmHg或舒张压≥90 mmHg。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "收缩压≥140 mmHg",
+            "SBP 140或以上"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "或舒张压≥90 mmHg",
+            "DBP 90或以上"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "140 mmHg",
+        "90 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "140",
+        "140 mmHg",
+        "90",
+        "90 mmHg"
+      ],
+      "answer_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "query_key_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "answer_direction_terms": [
+        "定义为"
+      ],
+      "query_key_direction_terms": [
+        "定义为"
+      ],
+      "citation_ids": [
+        "AHA-CLASS-04"
+      ],
+      "evidence_ids": [
+        "AHA-CLASS-01",
+        "AHA-CLASS-02",
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "ISH-CLASS-04"
+      ]
+    },
+    {
+      "id": "D23",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": true,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "AHA/ACC推荐的振荡式设备须满足什么验证条件？",
+      "answer": "该问题不在成人血压测量与诊断指南证据范围内，系统无法依据获准证据作答。",
+      "gold_ids": [
+        "AHA-MEAS-01"
+      ],
+      "gold_sources": [
+        "AHA_ACC_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 3.1.1 Accurate Measurement of In-Office BP",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "振荡法设备只有在以严格标准化参考方案验证准确度后，才属于建议使用的validated device。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "经严格标准化参考方案验证准确度",
+            "rigorous standardized validation"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [],
+      "evidence_ids": []
+    },
+    {
+      "id": "D22",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "classification",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "AHA/ACC 120至129的收缩压在什么舒张压条件下属于elevated BP？",
+      "answer": "根据2025年AHA/ACC成人高血压指南，当收缩压为120–129 mmHg且舒张压<80 mmHg时，属于elevated BP。 [AHA-CLASS-02]",
+      "gold_ids": [
+        "AHA-CLASS-02"
+      ],
+      "gold_sources": [
+        "AHA_ACC_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 2; Table 4",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "AHA/ACC elevated BP为收缩压120–129 mmHg且舒张压<80 mmHg。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "舒张压<80 mmHg",
+            "DBP低于80"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "129 mmHg",
+        "80 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "120至129",
+        "129 mmHg",
+        "80 mmHg"
+      ],
+      "answer_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "query_key_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "answer_direction_terms": [
+        "elevated"
+      ],
+      "query_key_direction_terms": [
+        "elevated",
+        "低于"
+      ],
+      "citation_ids": [
+        "AHA-CLASS-02"
+      ],
+      "evidence_ids": [
+        "AHA-CLASS-01",
+        "AHA-CLASS-02",
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "ISH-CLASS-02"
+      ]
+    },
+    {
+      "id": "D24",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "classification",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "AHA/ACC第1期高血压的阈值是什么，且分类依据怎样的重复测量？",
+      "answer": "根据2025年AHA/ACC成人高血压预防、检测、评估和管理指南，第1期高血压的阈值为收缩压130–139 mmHg或舒张压80–89 mmHg。 [AHA-CLASS-03]\nAHA/ACC指南规定，血压类别的确定基于至少2次谨慎测量的平均值，并以至少2个不同场合取得的读数为基础，单次读数不能单独代表该类别。 [AHA-CLASS-05]",
+      "gold_ids": [
+        "AHA-CLASS-03",
+        "AHA-CLASS-05"
+      ],
+      "gold_sources": [
+        "AHA_ACC_2025",
+        "AHA_ACC_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 2; Table 4",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "AHA/ACC第1期高血压为收缩压130–139 mmHg或舒张压80–89 mmHg。"
+        },
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 2; Table 4 footnote; Section 3",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "AHA/ACC血压类别按至少2次谨慎测量的平均值，并以至少2个不同场合取得的读数为基础；单次读数不能单独代表该类别。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "收缩压130–139或舒张压80–89 mmHg",
+            "SBP 130–139 or DBP 80–89"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "至少2次谨慎读数的平均，来自至少2个场合",
+            "average ≥2 readings on ≥2 occasions"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "139 mmHg",
+        "89 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "130–139",
+        "139",
+        "139 mmHg",
+        "80–89",
+        "89 mmHg",
+        "≥2"
+      ],
+      "answer_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "query_key_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "answer_direction_terms": [
+        "至少"
+      ],
+      "query_key_direction_terms": [
+        "至少"
+      ],
+      "citation_ids": [
+        "AHA-CLASS-03",
+        "AHA-CLASS-05"
+      ],
+      "evidence_ids": [
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "AHA-CLASS-05",
+        "AHA-THRESH-01",
+        "NICE-CLASS-01"
+      ]
+    },
+    {
+      "id": "D25",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "AHA/ACC家庭测量前30分钟应避免哪些活动或摄入？",
+      "answer": "根据2025年AHA/ACC成人高血压预防、检测、评估和管理指南，在进行家庭血压测量前30分钟应避免吸烟。 [AHA-HOME-01]\n根据2025年AHA/ACC成人高血压预防、检测、评估和管理指南，在进行家庭血压测量前30分钟应避免摄入含咖啡因的饮品。 [AHA-HOME-01]\n根据2025年AHA/ACC成人高血压预防、检测、评估和管理指南，在进行家庭血压测量前30分钟应避免运动。 [AHA-HOME-01]",
+      "gold_ids": [
+        "AHA-HOME-01"
+      ],
+      "gold_sources": [
+        "AHA_ACC_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 3.1.4; Home Blood Pressure Monitoring protocol",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "家庭测量需用准确性经验证且袖带尺寸合适的血压设备；测量前30分钟避免吸烟、含咖啡因饮品和运动。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "吸烟",
+            "smoking"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "含咖啡因饮品",
+            "咖啡因"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 3,
+          "acceptable_phrases": [
+            "运动",
+            "exercise"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "query_key_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "answer_direction_terms": [
+        "避免"
+      ],
+      "query_key_direction_terms": [
+        "避免"
+      ],
+      "citation_ids": [
+        "AHA-HOME-01"
+      ],
+      "evidence_ids": [
+        "AHA-HOME-01",
+        "AHA-HOME-02",
+        "AHA-HOME-03",
+        "ISH-HOME-01",
+        "ISH-MEAS-02"
+      ]
+    },
+    {
+      "id": "D27",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "confirmation",
+      "status": "ok",
+      "abstain": true,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "ISH 2026诊室收缩压138 mmHg、舒张压84 mmHg时建议用什么方式确认，且该值处于特别提示的范围吗？",
+      "answer": "现有获准指南证据未能逐项支持该问题所需事实，因此暂不作答。",
+      "gold_ids": [
+        "ISH-OUT-01",
+        "ISH-DX-02"
+      ],
+      "gold_sources": [
+        "ISH_GLOBAL_2026",
+        "ISH_GLOBAL_2026"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 3.3 Home and ambulatory BP monitoring",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "ISH 2026认为多数情况下诊断需诊室外血压；130–159 mmHg收缩压和/或80–99 mmHg舒张压者尤其应以标准化HBPM或ABPM确认。"
+        },
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 2 Definition of Hypertension; Section 3.2",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "ISH 2026建议尽可能以标准化HBPM或24小时ABPM确认诊室升高；若无法进行，可用后续就诊的重复诊室测量确认。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "sHBPM或ABPM确认",
+            "sHBPM or ABPM"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "收缩压130–159和/或舒张压80–99范围",
+            "within 130–159 and/or 80–99"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "130–159",
+        "159",
+        "2026",
+        "80–99",
+        "99"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "ISH 2026"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "建议"
+      ],
+      "citation_ids": [],
+      "evidence_ids": [
+        "ISH-CLASS-01",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-HOME-03",
+        "ISH-OUT-01",
+        "ISH-OUT-03"
+      ]
+    },
+    {
+      "id": "D26",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "classification",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "ISH 2026成人标准化诊室血压的正常类别同时满足什么上限？",
+      "answer": "根据ISH 2026指南，成人标准化诊室血压的正常类别要求收缩压上限低于130 mmHg且舒张压上限低于80 mmHg。 [ISH-CLASS-01]",
+      "gold_ids": [
+        "ISH-CLASS-01"
+      ],
+      "gold_sources": [
+        "ISH_GLOBAL_2026"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 2; Table 3",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "ISH 2026成人标准化诊室血压的正常类别为收缩压<130且舒张压<80 mmHg。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "收缩压<130 mmHg",
+            "SBP below 130"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "舒张压<80 mmHg",
+            "DBP below 80"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "2026"
+      ],
+      "query_or_key_numeric_expressions": [
+        "130",
+        "130 mmHg",
+        "2026",
+        "80",
+        "80 mmHg"
+      ],
+      "answer_authority_mentions": [
+        "ISH 2026"
+      ],
+      "query_key_authority_mentions": [
+        "ISH 2026"
+      ],
+      "answer_direction_terms": [
+        "低于"
+      ],
+      "query_key_direction_terms": [
+        "低于"
+      ],
+      "citation_ids": [
+        "ISH-CLASS-01"
+      ],
+      "evidence_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-DX-01",
+        "ISH-HOME-03",
+        "ISH-OUT-01",
+        "ISH-OUT-02"
+      ]
+    },
+    {
+      "id": "D29",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": true,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "ISH 2026一次标准化诊室测量应做几次，间隔多久，并如何汇总读数？",
+      "answer": "现有获准指南证据未能逐项支持该问题所需事实，因此暂不作答。",
+      "gold_ids": [
+        "ISH-MEAS-03"
+      ],
+      "gold_sources": [
+        "ISH_GLOBAL_2026"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 3.2; Standardised office BP measurement, Figure 3",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "袖带置于有支撑、与心脏同高的上臂；每次就诊测2–3次、间隔1分钟，取最后两次稳定读数的平均；优先用验证过的上臂电子设备。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "2–3次",
+            "2–3 readings"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "间隔1分钟",
+            "1-minute intervals"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 3,
+          "acceptable_phrases": [
+            "平均最后两次稳定读数",
+            "average last two stable readings"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "1",
+        "2026",
+        "2–3",
+        "2–3次"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "ISH 2026"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [],
+      "evidence_ids": [
+        "ISH-CLASS-01",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ]
+    },
+    {
+      "id": "D28",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "confirmation",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "ISH 2026诊断确认常用哪些诊室外测量？",
+      "answer": "ISH 2026建议尽可能以标准化家庭血压测量（HBPM）或24小时动态血压监测（ABPM）确认诊室血压升高。 [ISH-DX-02]\n若无法进行诊室外测量，ISH 2026建议可用后续就诊的重复诊室测量来确认高血压诊断。 [ISH-DX-02]",
+      "gold_ids": [
+        "ISH-DX-02"
+      ],
+      "gold_sources": [
+        "ISH_GLOBAL_2026"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 2 Definition of Hypertension; Section 3.2",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "ISH 2026建议尽可能以标准化HBPM或24小时ABPM确认诊室升高；若无法进行，可用后续就诊的重复诊室测量确认。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "标准化家庭血压监测",
+            "sHBPM"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "24小时动态血压监测",
+            "24-h ABPM"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [
+        "2026"
+      ],
+      "query_or_key_numeric_expressions": [
+        "2026",
+        "24",
+        "24小时"
+      ],
+      "answer_authority_mentions": [
+        "ISH 2026"
+      ],
+      "query_key_authority_mentions": [
+        "ISH 2026"
+      ],
+      "answer_direction_terms": [
+        "建议"
+      ],
+      "query_key_direction_terms": [
+        "建议"
+      ],
+      "citation_ids": [
+        "ISH-DX-02"
+      ],
+      "evidence_ids": [
+        "ISH-DX-02"
+      ]
+    },
+    {
+      "id": "D31",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "ISH 2026在房颤等心律失常且电子设备不适用时优先采用何种测量？",
+      "answer": "在房颤等心律失常情况下，ISH 2026指南建议优先采用人工听诊法进行血压测量。 [ISH-MEAS-04]",
+      "gold_ids": [
+        "ISH-MEAS-04"
+      ],
+      "gold_sources": [
+        "ISH_GLOBAL_2026"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 3.2; Standardised office BP measurement, Figure 3",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "若无经验证电子设备，ISH允许使用质量良好的防震人工听诊血压计；心房颤动等心律失常时优先人工听诊。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "人工听诊",
+            "manual auscultation"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "有质量保证的防震血压计",
+            "quality shock-resistant sphygmomanometer"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "2026"
+      ],
+      "query_or_key_numeric_expressions": [
+        "2026"
+      ],
+      "answer_authority_mentions": [
+        "ISH 2026"
+      ],
+      "query_key_authority_mentions": [
+        "ISH 2026"
+      ],
+      "answer_direction_terms": [
+        "优先",
+        "建议"
+      ],
+      "query_key_direction_terms": [
+        "优先",
+        "建议"
+      ],
+      "citation_ids": [
+        "ISH-MEAS-04"
+      ],
+      "evidence_ids": [
+        "ISH-DX-02",
+        "ISH-HOME-01",
+        "ISH-MEAS-03",
+        "ISH-MEAS-04",
+        "ISH-OUT-03"
+      ]
+    },
+    {
+      "id": "D30",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "ISH如何解释药房自动测量的诊断阈值及其使用限制？",
+      "answer": "根据ISH 2026指南，药房自动测得的血压可用于筛查与随访。 [ISH-OUT-02]\n若将药房自动测量用于诊断，ISH 2026指南指出约135/85 mmHg为参考阈值。 [ISH-OUT-02]\nISH 2026指南指出，药房自动测量的诊断阈值使用需视测量条件和方案而定。 [ISH-OUT-02]",
+      "gold_ids": [
+        "ISH-OUT-02"
+      ],
+      "gold_sources": [
+        "ISH_GLOBAL_2026"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 3.5 Other methods for out-of-office blood pressure monitoring",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "ISH 2026称药房自动测得的血压可用于筛查与随访；若用于诊断，约135/85 mmHg为参考阈值，但要视测量条件和方案而定。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "约135/85 mmHg",
+            "approximately 135/85"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "取决于测量条件与方案",
+            "depends on conditions and protocol"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "2026",
+        "85 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "135/85",
+        "2026",
+        "85 mmHg"
+      ],
+      "answer_authority_mentions": [
+        "ISH 2026"
+      ],
+      "query_key_authority_mentions": [
+        "ISH",
+        "ISH 2026"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "ISH-OUT-02"
+      ],
+      "evidence_ids": [
+        "ISH-DX-01",
+        "ISH-HOME-03",
+        "ISH-OUT-01",
+        "ISH-OUT-02",
+        "ISH-OUT-03"
+      ]
+    },
+    {
+      "id": "D32",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "ISH是否建议使用公共场所自助亭式读数诊断高血压？",
+      "answer": "根据2026年国际高血压学会（ISH）指南，不建议使用公共场所自助亭式血压测量读数来诊断高血压。 [ISH-OUT-03]",
+      "gold_ids": [
+        "ISH-OUT-03"
+      ],
+      "gold_sources": [
+        "ISH_GLOBAL_2026"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2026 International Society of Hypertension Global Hypertension Practice Guidelines",
+          "locator": "Section 3.5; Kiosk blood pressure monitors in public spaces",
+          "source_id": "ISH_GLOBAL_2026",
+          "authority": "International Society of Hypertension (ISH)",
+          "population": "The adult classification and diagnostic sections only. Pediatric, pregnancy, and individual medication decisions are outside this evidence set.",
+          "text": "ISH 2026认为公共场所自助亭式血压测量可用于人群筛查或偶尔监测，但不建议用于高血压诊断或管理。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "不建议用于诊断或管理",
+            "not recommended for diagnosis or management"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "可用于人群筛查或偶尔监测",
+            "screening or occasional monitoring only"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [
+        "ISH"
+      ],
+      "query_key_authority_mentions": [
+        "ISH"
+      ],
+      "answer_direction_terms": [
+        "不建议"
+      ],
+      "query_key_direction_terms": [
+        "recommended",
+        "不建议",
+        "建议"
+      ],
+      "citation_ids": [
+        "ISH-OUT-03"
+      ],
+      "evidence_ids": [
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-HOME-01",
+        "ISH-OUT-01",
+        "ISH-OUT-02",
+        "ISH-OUT-03"
+      ]
+    },
+    {
+      "id": "D34",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "exceptions",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "NICE对疑似嗜铬细胞瘤的专科评估时限是什么？",
+      "answer": "根据NICE指南，疑似嗜铬细胞瘤的患者应当日接受专科评估。 [NICE-URGENT-03]",
+      "gold_ids": [
+        "NICE-URGENT-03"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.5.3",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "疑似嗜铬细胞瘤时应当日专科评估；举例症状包括血压易变或体位性低血压、头痛、心悸、苍白、腹痛或出汗。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "当日",
+            "同一天"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [
+        "NICE"
+      ],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [
+        "应当"
+      ],
+      "query_key_direction_terms": [
+        "应当"
+      ],
+      "citation_ids": [
+        "NICE-URGENT-03"
+      ],
+      "evidence_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-06",
+        "NICE-URGENT-02",
+        "NICE-URGENT-03"
+      ]
+    },
+    {
+      "id": "D35",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "scope_boundary",
+      "status": "ok",
+      "abstain": true,
+      "answerable": false,
+      "scope_out": true,
+      "unanswerable": true,
+      "expected_match": null,
+      "query": "USPSTF成人筛查建议是否为17岁青少年提供血压诊断阈值？",
+      "answer": "该问题不在成人血压测量与诊断指南证据范围内，系统无法依据获准证据作答。",
+      "gold_ids": [
+        "USP-POP-01"
+      ],
+      "gold_sources": [
+        "USPSTF_SCREEN_2021"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in Adults: Screening — Final Recommendation Statement",
+          "locator": "Recommendation Summary; Patient Population Under Consideration",
+          "source_id": "USPSTF_SCREEN_2021",
+          "authority": "U.S. Preventive Services Task Force (USPSTF)",
+          "population": "Adults aged 18 years and older without known hypertension; this screening recommendation does not cover children/adolescents or known hypertension follow-up.",
+          "text": "USPSTF 2021筛查建议对象为≥18岁且既往未确诊高血压的成人。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "不适用；对象为18岁及以上成人",
+            "recommendation applies to adults ≥18"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "≥18"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "USPSTF"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "recommend",
+        "建议"
+      ],
+      "citation_ids": [],
+      "evidence_ids": []
+    },
+    {
+      "id": "D33",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "exceptions",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "按NICE，成人诊室血压≥180/120但无当日转诊体征时，未发现靶器官损害后如何及时确认？",
+      "answer": "对于诊室血压≥180/120 mmHg但没有当日转诊体征或症状的成人，应尽快检查靶器官损害。 [NICE-URGENT-01]\n若未发现靶器官损害，可在7天内复测诊室血压，或做ABPM/HBPM并确保7天内临床复核。 [NICE-URGENT-01]",
+      "gold_ids": [
+        "NICE-URGENT-01"
+      ],
+      "gold_sources": [
+        "NICE_NG136"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Hypertension in adults: diagnosis and management",
+          "locator": "Recommendations 1.5.1",
+          "source_id": "NICE_NG136",
+          "authority": "National Institute for Health and Care Excellence (NICE)",
+          "population": "Adults aged 18 years and older, including adults with type 2 diabetes for measurement and diagnosis; pregnancy is addressed in a separate NICE guideline.",
+          "text": "诊室血压≥180/120 mmHg但没有当日转诊体征/症状时，应尽快检查靶器官损害；未见损害时，可在7天内复测诊室血压，或做ABPM/HBPM并确保7天内临床复核。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "7天内复测诊室血压",
+            "repeat clinic within 7 days"
+          ],
+          "literal_match": true
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "或ABPM/HBPM并确保7天内临床复核",
+            "or ABPM/HBPM plus review within 7 days"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "180/120 mmHg"
+      ],
+      "query_or_key_numeric_expressions": [
+        "180/120",
+        "180/120 mmHg",
+        "7",
+        "7天"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [
+        "NICE-URGENT-01"
+      ],
+      "evidence_ids": [
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-06",
+        "NICE-URGENT-01",
+        "NICE-URGENT-02"
+      ]
+    },
+    {
+      "id": "D36",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "evidence_gap",
+      "status": "ok",
+      "abstain": true,
+      "answerable": false,
+      "scope_out": false,
+      "unanswerable": true,
+      "expected_match": null,
+      "query": "NICE说第二次读数与首次‘差异显著’时测第三次，是否给出精确mmHg差值？",
+      "answer": "现有获准指南证据未能逐项支持该问题所需事实，因此暂不作答。",
+      "gold_ids": [],
+      "gold_sources": [],
+      "gold_titles_locators": [],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "现有资料未规定",
+            "本语料没有这项细节",
+            "证据不足，不能给出该参数"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [
+        "NICE"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [],
+      "citation_ids": [],
+      "evidence_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-01",
+        "NICE-DX-02",
+        "NICE-DX-03"
+      ]
+    },
+    {
+      "id": "D38",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "measurement",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": true,
+      "query": "AHA/ACC建议测量人员多久接受一次理想的血压测量能力复核？",
+      "answer": "根据2025年AHA/ACC指南，对于成人血压测量人员，理想情况下应每6至12个月进行一次能力复核。 [AHA-MEAS-02]",
+      "gold_ids": [
+        "AHA-MEAS-02"
+      ],
+      "gold_sources": [
+        "AHA_ACC_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "2025 AHA/ACC/AANP/AAPA/ABC/ACCP/ACPM/AGS/AMA/ASPC/NMA/PCNA/SGIM Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults",
+          "locator": "Section 3.1.1; Accurate Measurement of In-Office BP",
+          "source_id": "AHA_ACC_2025",
+          "authority": "American Heart Association / American College of Cardiology and collaborating societies",
+          "population": "Adults; the guideline is not a source for pediatric or pregnancy-specific diagnostic care. Use only the stated adult classification and measurement sections.",
+          "text": "AHA/ACC要求测量人员接受初始和持续培训；理想情况下每6–12个月进行一次能力复核。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "每6–12个月",
+            "every 6–12 months"
+          ],
+          "literal_match": true
+        }
+      ],
+      "observed_numeric_expressions": [],
+      "query_or_key_numeric_expressions": [
+        "12",
+        "6–12"
+      ],
+      "answer_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "query_key_authority_mentions": [
+        "AHA/ACC"
+      ],
+      "answer_direction_terms": [],
+      "query_key_direction_terms": [
+        "建议"
+      ],
+      "citation_ids": [
+        "AHA-MEAS-02"
+      ],
+      "evidence_ids": [
+        "AHA-CLASS-05",
+        "AHA-HOME-01",
+        "AHA-HOME-03",
+        "AHA-MEAS-02",
+        "NICE-MEAS-01"
+      ]
+    },
+    {
+      "id": "D37",
+      "split": "dev",
+      "mode": "adaptive",
+      "family": "review_evidence",
+      "status": "ok",
+      "abstain": false,
+      "answerable": true,
+      "scope_out": false,
+      "unanswerable": false,
+      "expected_match": false,
+      "query": "在同设备、同方案的配对研究中，无人自动诊室测量相对有人测量的平均差值是多少？排除离群研究后有何变化？",
+      "answer": "在同设备、同方案的配对研究中，无人自动诊室测量相对有人测量的收缩压平均低2.7 mmHg（95% CI −4.7至−0.6）。 [JAHA-AOBP-02]\n在同设备、同方案的配对研究中，无人自动诊室测量相对有人测量的舒张压平均低0.9 mmHg（95% CI −1.8至−0.1）。 [JAHA-AOBP-02]\n排除单个离群研究后，无人自动诊室测量相对有人测量的收缩压差为−2.0 mmHg（95% CI −4.1至0.0）。 [JAHA-AOBP-02]",
+      "gold_ids": [
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02"
+      ],
+      "gold_sources": [
+        "JAHA_AOBP_REVIEW_2025",
+        "JAHA_AOBP_REVIEW_2025"
+      ],
+      "gold_titles_locators": [
+        {
+          "title": "Revisiting Unattended Versus Attended Automated Office Blood Pressure Measurements: A Systematic Review and Meta-Analysis",
+          "locator": "Abstract—Methods and Results",
+          "source_id": "JAHA_AOBP_REVIEW_2025",
+          "authority": "Journal of the American Heart Association; independent systematic review/meta-analysis",
+          "population": "Adult participants in same-device, same-protocol attended/unattended automated office BP comparisons; this synthesis is not a hypertension diagnostic-threshold guideline.",
+          "text": "该系统综述纳入15项同参与者的配对研究（n=1,747）；有人与无人自动诊室测量按随机或交替顺序，在同一就诊中使用同一设备和测量方案比较。"
+        },
+        {
+          "title": "Revisiting Unattended Versus Attended Automated Office Blood Pressure Measurements: A Systematic Review and Meta-Analysis",
+          "locator": "Abstract—Results; systolic and diastolic differences",
+          "source_id": "JAHA_AOBP_REVIEW_2025",
+          "authority": "Journal of the American Heart Association; independent systematic review/meta-analysis",
+          "population": "Adult participants in same-device, same-protocol attended/unattended automated office BP comparisons; this synthesis is not a hypertension diagnostic-threshold guideline.",
+          "text": "全样本中，无人测量较有人测量的收缩压平均低2.7 mmHg（95% CI −4.7至−0.6），舒张压低0.9 mmHg（−1.8至−0.1）；排除单个离群研究后，收缩压差为−2.0 mmHg（−4.1至0.0）。"
+        }
+      ],
+      "acceptable_point_checks": [
+        {
+          "group": 1,
+          "acceptable_phrases": [
+            "15项研究、1,747人，同一就诊同设备同方案配对",
+            "15 studies, n=1747, same-visit paired protocol"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 2,
+          "acceptable_phrases": [
+            "全样本收缩压低2.7 mmHg",
+            "SBP −2.7 mmHg"
+          ],
+          "literal_match": false
+        },
+        {
+          "group": 3,
+          "acceptable_phrases": [
+            "排除离群研究后低2.0 mmHg，CI含0",
+            "leave-one-out −2.0 mmHg, CI includes 0"
+          ],
+          "literal_match": false
+        }
+      ],
+      "observed_numeric_expressions": [
+        "0.1",
+        "0.6",
+        "1.8",
+        "2.0 mmHg",
+        "4.1至0.0",
+        "4.7",
+        "95%"
+      ],
+      "query_or_key_numeric_expressions": [
+        "0",
+        "0.1",
+        "0.6",
+        "1",
+        "1.8",
+        "15",
+        "1747",
+        "2.0 mmHg",
+        "2.7 mmHg",
+        "4.1至0.0",
+        "4.7",
+        "747",
+        "95%"
+      ],
+      "answer_authority_mentions": [],
+      "query_key_authority_mentions": [],
+      "answer_direction_terms": [
+        "排除"
+      ],
+      "query_key_direction_terms": [
+        "排除"
+      ],
+      "citation_ids": [
+        "JAHA-AOBP-02"
+      ],
+      "evidence_ids": [
+        "AHA-MEAS-01",
+        "AHA-WCH-01",
+        "ISH-MEAS-03",
+        "JAHA-AOBP-01",
+        "JAHA-AOBP-02",
+        "JAHA-AOBP-03"
+      ]
+    }
+  ]
+}

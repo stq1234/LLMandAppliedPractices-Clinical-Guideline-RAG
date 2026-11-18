@@ -1,0 +1,3 @@
+﻿split,candidate,reference,n_paired,candidate_gains,candidate_losses,ties,answerable_n,candidate_supported_keypoint_gains,candidate_supported_keypoint_losses,nonanswerable_refusal_n,candidate_correct_refusal_gains,candidate_correct_refusal_losses
+challenge,allgold_critic,allgold_writer_only,20,0,0,20,20,0,0,0,0,0
+challenge,allgold_writer_only,allgold_critic,20,0,0,20,20,0,0,0,0,0

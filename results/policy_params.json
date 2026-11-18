@@ -1,0 +1,10 @@
+{
+  "initial_threshold": 0.35,
+  "supplement_threshold": 0.25,
+  "multi_threshold": 0.5,
+  "initial_k": 5,
+  "supplement_k": 5,
+  "max_evidence": 8,
+  "lexical_weight": 0.15,
+  "force_action": null
+}

@@ -1,0 +1,12 @@
+{
+  "questions_file": "/home/shaotianqi/LLM/hw7_3_clinical_rag/data/questions.jsonl",
+  "question_sha256": "526955c72440911f4109a68e267361d0c9fc645d4680756426eb537d5c7b6bfb",
+  "evidence_sha256": "b86a5d9e7803cd1ce6e08ceda7db5e3ad8db65cc08daba4ecc854bb70b71d703",
+  "engine_sha256": "e168fb2006de823de96d058f5698235463d050352d5ad1899314898221008fc8",
+  "split": "test",
+  "n_answerable": 22,
+  "scheduled": 22,
+  "workers": 2,
+  "output": "/home/shaotianqi/LLM/hw7_3_clinical_rag/results/extended_oracle_writer_only_test.jsonl",
+  "condition": "same frozen System._plan and System._write_claims prompts on all and only gold IDs; no route, retrieval, critic, semantic validation or claim-anchor validation; gold is used only in this oracle arm"
+}

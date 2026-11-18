@@ -1,0 +1,1987 @@
+{
+  "summary": {
+    "split": "test",
+    "mode": "multi",
+    "n_answerable_with_gold": 22,
+    "n_first_gold_complete": 19,
+    "first_gold_complete_rate": 0.8636363636363636,
+    "n_with_supplement": 21,
+    "n_supplement_added_gold": 0,
+    "n_supplement_rescued_supported_answer": 0,
+    "n_supplement_nonproductive_gold": 21,
+    "mean_first_gold_recall": 0.9090909090909091,
+    "mean_final_gold_recall": 0.9090909090909091,
+    "n_supplement_stages": 21,
+    "family": {
+      "classification": {
+        "n": 2,
+        "first_complete_n": 2,
+        "supplement_n": 2,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "confirmation": {
+        "n": 2,
+        "first_complete_n": 1,
+        "supplement_n": 2,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "evidence_review": {
+        "n": 3,
+        "first_complete_n": 3,
+        "supplement_n": 3,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "exceptions": {
+        "n": 2,
+        "first_complete_n": 2,
+        "supplement_n": 2,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "measurement": {
+        "n": 6,
+        "first_complete_n": 5,
+        "supplement_n": 5,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "screening": {
+        "n": 1,
+        "first_complete_n": 1,
+        "supplement_n": 1,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      },
+      "source_comparison": {
+        "n": 6,
+        "first_complete_n": 5,
+        "supplement_n": 6,
+        "supplement_added_gold_n": 0,
+        "rescued_supported_answer_n": 0
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "D05",
+      "family": "measurement",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-POST-01"
+      ],
+      "first_ids": [],
+      "first_missing_gold": [
+        "NICE-POST-01"
+      ],
+      "first_gold_recall": 0.0,
+      "first_gold_complete": false,
+      "supplement_count": 0,
+      "supplement_steps": [],
+      "final_ids": [],
+      "final_gold_recall": 0.0,
+      "final_gold_complete": false,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 0
+    },
+    {
+      "id": "D06",
+      "family": "measurement",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-POST-02"
+      ],
+      "first_ids": [
+        "NICE-DX-07",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03",
+        "NICE-POST-04"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "D06",
+          "family": "measurement",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "NICE判定显著体位性血压下降的两个阈值是什么？"
+          ],
+          "retrieved_ids": [
+            "NICE-DX-07",
+            "NICE-POST-01",
+            "NICE-POST-02",
+            "NICE-POST-03",
+            "NICE-POST-04"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-POST-02"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "NICE-DX-07",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03",
+        "NICE-POST-04"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": true,
+      "abstain": false,
+      "citation_ids": [
+        "NICE-POST-02"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T01",
+      "family": "source_comparison",
+      "complexity": "multi",
+      "gold_ids": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-02"
+      ],
+      "first_ids": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-OUT-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T01",
+          "family": "source_comparison",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "AHA/ACC与ISH 2026",
+            "ish 把130–139/80–89 mmHg归为什么类别",
+            "AHA/ACC与ISH 2026分别把130–139/80–89 mmHg归为什么类别？"
+          ],
+          "retrieved_ids": [
+            "AHA-CLASS-03",
+            "ISH-CLASS-01",
+            "ISH-CLASS-02",
+            "ISH-CLASS-03",
+            "ISH-DX-01",
+            "ISH-OUT-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "AHA-CLASS-03",
+            "ISH-CLASS-02"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-DX-01",
+        "ISH-OUT-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-02"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T02",
+      "family": "source_comparison",
+      "complexity": "multi",
+      "gold_ids": [
+        "ISH-MEAS-01",
+        "NICE-DX-01",
+        "NICE-DX-02"
+      ],
+      "first_ids": [
+        "ISH-MEAS-01",
+        "ISH-MEAS-03",
+        "NICE-DX-01",
+        "NICE-DX-02",
+        "NICE-DX-03"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T02",
+          "family": "source_comparison",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "按NICE与ISH 2026，首次双臂测量后，持续臂间收缩压差多少会改用高读数臂？"
+          ],
+          "retrieved_ids": [
+            "ISH-MEAS-01",
+            "ISH-MEAS-03",
+            "NICE-DX-01",
+            "NICE-DX-02",
+            "NICE-DX-03"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-MEAS-01",
+            "NICE-DX-01",
+            "NICE-DX-02"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-MEAS-01",
+        "ISH-MEAS-03",
+        "NICE-DX-01",
+        "NICE-DX-02",
+        "NICE-DX-03"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-MEAS-01",
+        "NICE-DX-02"
+      ],
+      "citation_coverage": 0.6666666666666666,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "T03",
+      "family": "confirmation",
+      "complexity": "multi",
+      "gold_ids": [
+        "NICE-DX-03",
+        "NICE-DX-04"
+      ],
+      "first_ids": [
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-07",
+        "NICE-DX-09",
+        "NICE-URGENT-01"
+      ],
+      "first_missing_gold": [
+        "NICE-DX-04"
+      ],
+      "first_gold_recall": 0.5,
+      "first_gold_complete": false,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T03",
+          "family": "confirmation",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "NICE对诊室150/96 mmHg的成人如何复测，并用什么方式确认？"
+          ],
+          "retrieved_ids": [
+            "NICE-CLASS-02",
+            "NICE-DX-03",
+            "NICE-DX-07",
+            "NICE-DX-09",
+            "NICE-URGENT-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-DX-03"
+          ],
+          "gold_recall_after_stage": 0.5,
+          "gold_complete_after_stage": false
+        }
+      ],
+      "final_ids": [
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-07",
+        "NICE-DX-09",
+        "NICE-URGENT-01"
+      ],
+      "final_gold_recall": 0.5,
+      "final_gold_complete": false,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "T04",
+      "family": "measurement",
+      "complexity": "multi",
+      "gold_ids": [
+        "ISH-HOME-02",
+        "NICE-HBPM-02"
+      ],
+      "first_ids": [
+        "ISH-HOME-02",
+        "ISH-HOME-03",
+        "NICE-DX-03",
+        "NICE-HBPM-01",
+        "NICE-HBPM-02"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T04",
+          "family": "measurement",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "比较NICE与ISH家庭诊断方案：是否弃去第一天",
+            "nice ish 记录至少几天",
+            "比较NICE与ISH家庭诊断方案：是否弃去第一天，分别记录至少几天？"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-05",
+            "ISH-HOME-02",
+            "NICE-DX-05",
+            "NICE-HBPM-01",
+            "NICE-HBPM-02"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-HOME-02",
+            "NICE-HBPM-02"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-05",
+        "ISH-HOME-02",
+        "ISH-HOME-03",
+        "NICE-DX-03",
+        "NICE-DX-05",
+        "NICE-HBPM-01",
+        "NICE-HBPM-02"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-HOME-02",
+        "NICE-HBPM-02"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T05",
+      "family": "source_comparison",
+      "complexity": "single",
+      "gold_ids": [
+        "AHA-THRESH-02"
+      ],
+      "first_ids": [
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "NICE-CLASS-01",
+        "NICE-DX-04",
+        "NICE-DX-07"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T05",
+          "family": "source_comparison",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "给医生一个AHA/ACC 140/90 mmHg诊室值对应的夜间和24小时ABPM表值。"
+          ],
+          "retrieved_ids": [
+            "AHA-THRESH-01",
+            "AHA-THRESH-02",
+            "NICE-CLASS-01",
+            "NICE-DX-04",
+            "NICE-DX-07"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "AHA-THRESH-02"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "NICE-CLASS-01",
+        "NICE-DX-04",
+        "NICE-DX-07"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": true,
+      "abstain": false,
+      "citation_ids": [
+        "AHA-THRESH-02"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T06",
+      "family": "classification",
+      "complexity": "single",
+      "gold_ids": [
+        "ISH-CLASS-04"
+      ],
+      "first_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-DX-01",
+        "NICE-CLASS-02"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T06",
+          "family": "classification",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "按ISH 2026的分级，成人标准化诊室160/100 mmHg处于哪个等级？"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-01",
+            "ISH-CLASS-02",
+            "ISH-CLASS-03",
+            "ISH-CLASS-04",
+            "ISH-DX-01",
+            "NICE-CLASS-02"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-CLASS-04"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-DX-01",
+        "NICE-CLASS-02"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": true,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-CLASS-04"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T07",
+      "family": "confirmation",
+      "complexity": "single",
+      "gold_ids": [
+        "ISH-DX-03"
+      ],
+      "first_ids": [
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-03",
+        "ISH-OUT-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T07",
+          "family": "confirmation",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "ISH 2026通常要求几次诊室就诊确认，且一般间隔几周？"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-05",
+            "ISH-DX-01",
+            "ISH-DX-02",
+            "ISH-DX-03",
+            "ISH-OUT-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-DX-03"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-03",
+        "ISH-OUT-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "T08",
+      "family": "exceptions",
+      "complexity": "single",
+      "gold_ids": [
+        "ISH-DX-04"
+      ],
+      "first_ids": [
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-04",
+        "ISH-OUT-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T08",
+          "family": "exceptions",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "ISH 2026何种情况允许不等待多次就诊便在一次就诊诊断？"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-05",
+            "ISH-DX-01",
+            "ISH-DX-02",
+            "ISH-DX-04",
+            "ISH-OUT-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-DX-04"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-04",
+        "ISH-OUT-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-DX-01",
+        "ISH-DX-04"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T09",
+      "family": "source_comparison",
+      "complexity": "multi",
+      "gold_ids": [
+        "ISH-DX-03",
+        "NICE-DX-04"
+      ],
+      "first_ids": [
+        "ISH-DX-01",
+        "ISH-DX-03",
+        "NICE-CLASS-01",
+        "NICE-DX-03",
+        "NICE-DX-04"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T09",
+          "family": "source_comparison",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "ish 按NICE，诊室140/90至180/120 mmHg时提供什么确认监测",
+            "nice 按ISH通常需几次就诊、间隔几周确认",
+            "ish 按NICE，诊室140/90至180/120 mmHg时提供什么确认监测？"
+          ],
+          "retrieved_ids": [
+            "ISH-DX-01",
+            "ISH-DX-03",
+            "NICE-CLASS-01",
+            "NICE-DX-04",
+            "NICE-DX-09"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-DX-03",
+            "NICE-DX-04"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-DX-01",
+        "ISH-DX-03",
+        "NICE-CLASS-01",
+        "NICE-DX-03",
+        "NICE-DX-04",
+        "NICE-DX-09"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "T10",
+      "family": "measurement",
+      "complexity": "multi",
+      "gold_ids": [
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "first_ids": [
+        "ISH-CLASS-01",
+        "ISH-DX-01",
+        "ISH-HOME-01",
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T10",
+          "family": "measurement",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "按ISH标准化诊室方案，安静坐位准备多久，袖带臂应怎样放置？"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-01",
+            "ISH-DX-01",
+            "ISH-HOME-01",
+            "ISH-MEAS-02",
+            "ISH-MEAS-03"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-MEAS-02",
+            "ISH-MEAS-03"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-01",
+        "ISH-DX-01",
+        "ISH-HOME-01",
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T11",
+      "family": "measurement",
+      "complexity": "multi",
+      "gold_ids": [
+        "ISH-POST-01",
+        "NICE-POST-01"
+      ],
+      "first_ids": [
+        "ISH-OUT-03",
+        "ISH-POST-01",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-04"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T11",
+          "family": "measurement",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "对出现体位性症状的成人，NICE与ISH"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-01",
+            "ISH-POST-01",
+            "NICE-POST-01",
+            "NICE-POST-02",
+            "NICE-POST-03"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-POST-01",
+            "NICE-POST-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-01",
+        "ISH-OUT-03",
+        "ISH-POST-01",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03",
+        "NICE-POST-04"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "T12",
+      "family": "screening",
+      "complexity": "multi",
+      "gold_ids": [
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "first_ids": [
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T12",
+          "family": "screening",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "USPSTF的筛查建议适用于哪类成人",
+            "uspstf 成人 何时须进行诊室外确认"
+          ],
+          "retrieved_ids": [
+            "REV-HETEROGENEITY-01",
+            "REV-SCOPE-01",
+            "USP-BOUNDARY-01",
+            "USP-POP-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "USP-POP-01",
+            "USP-SCREEN-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-OFFICE-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T13",
+      "family": "source_comparison",
+      "complexity": "multi",
+      "gold_ids": [
+        "AHA-THRESH-02",
+        "NICE-DX-07"
+      ],
+      "first_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-04",
+        "NICE-DX-07"
+      ],
+      "first_missing_gold": [
+        "AHA-THRESH-02"
+      ],
+      "first_gold_recall": 0.5,
+      "first_gold_complete": false,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T13",
+          "family": "source_comparison",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "NICE与AHA/ACC的140/90诊室值",
+            "NICE与AHA/ACC的140/90诊室值分别对应怎样的诊断外部测量阈值？"
+          ],
+          "retrieved_ids": [
+            "NICE-CLASS-01",
+            "NICE-CLASS-02",
+            "NICE-DX-03",
+            "NICE-DX-04",
+            "NICE-DX-07"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-DX-07"
+          ],
+          "gold_recall_after_stage": 0.5,
+          "gold_complete_after_stage": false
+        }
+      ],
+      "final_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-04",
+        "NICE-DX-07"
+      ],
+      "final_gold_recall": 0.5,
+      "final_gold_complete": false,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "T14",
+      "family": "evidence_review",
+      "complexity": "single",
+      "gold_ids": [
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "first_ids": [
+        "AHA-OUT-01",
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T14",
+          "family": "evidence_review",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "综述里诊室确认测量的准确性结果，敏感度与特异度各多少？"
+          ],
+          "retrieved_ids": [
+            "AHA-OUT-01",
+            "REV-HOME-01",
+            "REV-OFFICE-01",
+            "REV-OFFICE-CONFIRM-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "REV-OFFICE-CONFIRM-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-OUT-01",
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T15",
+      "family": "evidence_review",
+      "complexity": "multi",
+      "gold_ids": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "first_ids": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "REV-SIZE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T15",
+          "family": "evidence_review",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "USPSTF综述比较诊室初筛与诊室确诊时，二者的敏感度和特异度各是多少？"
+          ],
+          "retrieved_ids": [
+            "REV-OFFICE-01",
+            "REV-OFFICE-CONFIRM-01",
+            "REV-SIZE-01",
+            "USP-BOUNDARY-01",
+            "USP-POP-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "REV-OFFICE-01",
+            "REV-OFFICE-CONFIRM-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "REV-SIZE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T16",
+      "family": "evidence_review",
+      "complexity": "single",
+      "gold_ids": [
+        "REV-HARM-01"
+      ],
+      "first_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-HBPM-01",
+        "USP-SCREEN-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T16",
+          "family": "evidence_review",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "USPSTF证据综述观察到ABPM的哪些短期不适？"
+          ],
+          "retrieved_ids": [
+            "REV-HARM-01",
+            "REV-SCOPE-01",
+            "USP-ABPM-01",
+            "USP-HBPM-01",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "REV-HARM-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-HBPM-01",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": true,
+      "abstain": false,
+      "citation_ids": [
+        "REV-HARM-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T19",
+      "family": "exceptions",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-URGENT-02"
+      ],
+      "first_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07",
+        "NICE-URGENT-01",
+        "NICE-URGENT-02"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T19",
+          "family": "exceptions",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "NICE诊室读数180/120且合并新发意识混乱，应如何分流？"
+          ],
+          "retrieved_ids": [
+            "NICE-CLASS-01",
+            "NICE-CLASS-02",
+            "NICE-DX-07",
+            "NICE-URGENT-01",
+            "NICE-URGENT-02"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-URGENT-02"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07",
+        "NICE-URGENT-01",
+        "NICE-URGENT-02"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "NICE-URGENT-02"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T20",
+      "family": "measurement",
+      "complexity": "single",
+      "gold_ids": [
+        "NICE-MONITOR-01"
+      ],
+      "first_ids": [
+        "NICE-ABPM-01",
+        "NICE-DX-07",
+        "NICE-HBPM-01",
+        "NICE-HBPM-02",
+        "NICE-MONITOR-01"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T20",
+          "family": "measurement",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "NICE对成人高血压患者用ABPM或HBPM监测反应时，应取哪个时段的平均值？"
+          ],
+          "retrieved_ids": [
+            "NICE-ABPM-01",
+            "NICE-DX-07",
+            "NICE-HBPM-01",
+            "NICE-HBPM-02",
+            "NICE-MONITOR-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "NICE-MONITOR-01"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "NICE-ABPM-01",
+        "NICE-DX-07",
+        "NICE-HBPM-01",
+        "NICE-HBPM-02",
+        "NICE-MONITOR-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "NICE-ABPM-01",
+        "NICE-DX-07",
+        "NICE-HBPM-02",
+        "NICE-MONITOR-01"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    },
+    {
+      "id": "T21",
+      "family": "classification",
+      "complexity": "single",
+      "gold_ids": [
+        "AHA-CLASS-03"
+      ],
+      "first_ids": [
+        "AHA-CLASS-01",
+        "AHA-CLASS-02",
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "AHA-THRESH-01",
+        "ISH-CLASS-03"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T21",
+          "family": "classification",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "超标为条件"
+          ],
+          "retrieved_ids": [
+            "AHA-WCH-01",
+            "ISH-CLASS-03",
+            "ISH-OUT-02",
+            "NICE-CLASS-01",
+            "NICE-POST-03",
+            "USP-SCREEN-01"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "AHA-CLASS-03"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "AHA-CLASS-03",
+        "AHA-CLASS-04",
+        "AHA-WCH-01",
+        "ISH-CLASS-03",
+        "ISH-OUT-02",
+        "NICE-CLASS-01",
+        "NICE-POST-03",
+        "USP-SCREEN-01"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": true,
+      "citation_ids": [],
+      "citation_coverage": 0.0,
+      "citations_complete": false,
+      "rounds": 2
+    },
+    {
+      "id": "T22",
+      "family": "source_comparison",
+      "complexity": "multi",
+      "gold_ids": [
+        "ISH-HOME-03",
+        "NICE-DX-07"
+      ],
+      "first_ids": [
+        "ISH-DX-01",
+        "ISH-HOME-03",
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07"
+      ],
+      "first_missing_gold": [],
+      "first_gold_recall": 1.0,
+      "first_gold_complete": true,
+      "supplement_count": 1,
+      "supplement_steps": [
+        {
+          "id": "T22",
+          "family": "source_comparison",
+          "mode": "multi",
+          "stage": 1,
+          "reason": "forced_multi_round",
+          "queries": [
+            "NICE与ISH对未诊断成人的证据性家庭阈值是否相同",
+            "nice ish 成人 给出收缩压或舒张压界值",
+            "nice ish 成人 收缩压或舒张压界值"
+          ],
+          "retrieved_ids": [
+            "ISH-CLASS-01",
+            "ISH-CLASS-02",
+            "ISH-HOME-03",
+            "NICE-CLASS-01",
+            "NICE-DX-07"
+          ],
+          "new_gold_ids": [],
+          "gold_ids_found_after_stage": [
+            "ISH-HOME-03",
+            "NICE-DX-07"
+          ],
+          "gold_recall_after_stage": 1.0,
+          "gold_complete_after_stage": true
+        }
+      ],
+      "final_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-DX-01",
+        "ISH-HOME-03",
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07"
+      ],
+      "final_gold_recall": 1.0,
+      "final_gold_complete": true,
+      "supplement_added_gold": false,
+      "supplement_rescued_supported_answer": false,
+      "expected_match": false,
+      "abstain": false,
+      "citation_ids": [
+        "ISH-HOME-03",
+        "NICE-DX-07"
+      ],
+      "citation_coverage": 1.0,
+      "citations_complete": true,
+      "rounds": 2
+    }
+  ],
+  "stages": [
+    {
+      "id": "D06",
+      "family": "measurement",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "NICE判定显著体位性血压下降的两个阈值是什么？"
+      ],
+      "retrieved_ids": [
+        "NICE-DX-07",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03",
+        "NICE-POST-04"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-POST-02"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T01",
+      "family": "source_comparison",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "AHA/ACC与ISH 2026",
+        "ish 把130–139/80–89 mmHg归为什么类别",
+        "AHA/ACC与ISH 2026分别把130–139/80–89 mmHg归为什么类别？"
+      ],
+      "retrieved_ids": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-DX-01",
+        "ISH-OUT-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-02"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T02",
+      "family": "source_comparison",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "按NICE与ISH 2026，首次双臂测量后，持续臂间收缩压差多少会改用高读数臂？"
+      ],
+      "retrieved_ids": [
+        "ISH-MEAS-01",
+        "ISH-MEAS-03",
+        "NICE-DX-01",
+        "NICE-DX-02",
+        "NICE-DX-03"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-MEAS-01",
+        "NICE-DX-01",
+        "NICE-DX-02"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T03",
+      "family": "confirmation",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "NICE对诊室150/96 mmHg的成人如何复测，并用什么方式确认？"
+      ],
+      "retrieved_ids": [
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-07",
+        "NICE-DX-09",
+        "NICE-URGENT-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-DX-03"
+      ],
+      "gold_recall_after_stage": 0.5,
+      "gold_complete_after_stage": false
+    },
+    {
+      "id": "T04",
+      "family": "measurement",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "比较NICE与ISH家庭诊断方案：是否弃去第一天",
+        "nice ish 记录至少几天",
+        "比较NICE与ISH家庭诊断方案：是否弃去第一天，分别记录至少几天？"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-05",
+        "ISH-HOME-02",
+        "NICE-DX-05",
+        "NICE-HBPM-01",
+        "NICE-HBPM-02"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-HOME-02",
+        "NICE-HBPM-02"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T05",
+      "family": "source_comparison",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "给医生一个AHA/ACC 140/90 mmHg诊室值对应的夜间和24小时ABPM表值。"
+      ],
+      "retrieved_ids": [
+        "AHA-THRESH-01",
+        "AHA-THRESH-02",
+        "NICE-CLASS-01",
+        "NICE-DX-04",
+        "NICE-DX-07"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "AHA-THRESH-02"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T06",
+      "family": "classification",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "按ISH 2026的分级，成人标准化诊室160/100 mmHg处于哪个等级？"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-CLASS-03",
+        "ISH-CLASS-04",
+        "ISH-DX-01",
+        "NICE-CLASS-02"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-CLASS-04"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T07",
+      "family": "confirmation",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "ISH 2026通常要求几次诊室就诊确认，且一般间隔几周？"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-03",
+        "ISH-OUT-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-DX-03"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T08",
+      "family": "exceptions",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "ISH 2026何种情况允许不等待多次就诊便在一次就诊诊断？"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-05",
+        "ISH-DX-01",
+        "ISH-DX-02",
+        "ISH-DX-04",
+        "ISH-OUT-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-DX-04"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T09",
+      "family": "source_comparison",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "ish 按NICE，诊室140/90至180/120 mmHg时提供什么确认监测",
+        "nice 按ISH通常需几次就诊、间隔几周确认",
+        "ish 按NICE，诊室140/90至180/120 mmHg时提供什么确认监测？"
+      ],
+      "retrieved_ids": [
+        "ISH-DX-01",
+        "ISH-DX-03",
+        "NICE-CLASS-01",
+        "NICE-DX-04",
+        "NICE-DX-09"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-DX-03",
+        "NICE-DX-04"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T10",
+      "family": "measurement",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "按ISH标准化诊室方案，安静坐位准备多久，袖带臂应怎样放置？"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-01",
+        "ISH-DX-01",
+        "ISH-HOME-01",
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T11",
+      "family": "measurement",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "对出现体位性症状的成人，NICE与ISH"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-01",
+        "ISH-POST-01",
+        "NICE-POST-01",
+        "NICE-POST-02",
+        "NICE-POST-03"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-POST-01",
+        "NICE-POST-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T12",
+      "family": "screening",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "USPSTF的筛查建议适用于哪类成人",
+        "uspstf 成人 何时须进行诊室外确认"
+      ],
+      "retrieved_ids": [
+        "REV-HETEROGENEITY-01",
+        "REV-SCOPE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T13",
+      "family": "source_comparison",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "NICE与AHA/ACC的140/90诊室值",
+        "NICE与AHA/ACC的140/90诊室值分别对应怎样的诊断外部测量阈值？"
+      ],
+      "retrieved_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-03",
+        "NICE-DX-04",
+        "NICE-DX-07"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-DX-07"
+      ],
+      "gold_recall_after_stage": 0.5,
+      "gold_complete_after_stage": false
+    },
+    {
+      "id": "T14",
+      "family": "evidence_review",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "综述里诊室确认测量的准确性结果，敏感度与特异度各多少？"
+      ],
+      "retrieved_ids": [
+        "AHA-OUT-01",
+        "REV-HOME-01",
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T15",
+      "family": "evidence_review",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "USPSTF综述比较诊室初筛与诊室确诊时，二者的敏感度和特异度各是多少？"
+      ],
+      "retrieved_ids": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01",
+        "REV-SIZE-01",
+        "USP-BOUNDARY-01",
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T16",
+      "family": "evidence_review",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "USPSTF证据综述观察到ABPM的哪些短期不适？"
+      ],
+      "retrieved_ids": [
+        "REV-HARM-01",
+        "REV-SCOPE-01",
+        "USP-ABPM-01",
+        "USP-HBPM-01",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "REV-HARM-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T19",
+      "family": "exceptions",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "NICE诊室读数180/120且合并新发意识混乱，应如何分流？"
+      ],
+      "retrieved_ids": [
+        "NICE-CLASS-01",
+        "NICE-CLASS-02",
+        "NICE-DX-07",
+        "NICE-URGENT-01",
+        "NICE-URGENT-02"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-URGENT-02"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T20",
+      "family": "measurement",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "NICE对成人高血压患者用ABPM或HBPM监测反应时，应取哪个时段的平均值？"
+      ],
+      "retrieved_ids": [
+        "NICE-ABPM-01",
+        "NICE-DX-07",
+        "NICE-HBPM-01",
+        "NICE-HBPM-02",
+        "NICE-MONITOR-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "NICE-MONITOR-01"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T21",
+      "family": "classification",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "超标为条件"
+      ],
+      "retrieved_ids": [
+        "AHA-WCH-01",
+        "ISH-CLASS-03",
+        "ISH-OUT-02",
+        "NICE-CLASS-01",
+        "NICE-POST-03",
+        "USP-SCREEN-01"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "AHA-CLASS-03"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    },
+    {
+      "id": "T22",
+      "family": "source_comparison",
+      "mode": "multi",
+      "stage": 1,
+      "reason": "forced_multi_round",
+      "queries": [
+        "NICE与ISH对未诊断成人的证据性家庭阈值是否相同",
+        "nice ish 成人 给出收缩压或舒张压界值",
+        "nice ish 成人 收缩压或舒张压界值"
+      ],
+      "retrieved_ids": [
+        "ISH-CLASS-01",
+        "ISH-CLASS-02",
+        "ISH-HOME-03",
+        "NICE-CLASS-01",
+        "NICE-DX-07"
+      ],
+      "new_gold_ids": [],
+      "gold_ids_found_after_stage": [
+        "ISH-HOME-03",
+        "NICE-DX-07"
+      ],
+      "gold_recall_after_stage": 1.0,
+      "gold_complete_after_stage": true
+    }
+  ]
+}

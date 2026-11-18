@@ -1,0 +1,171 @@
+{
+  "title": "Frozen test subset: supplied-context intervention",
+  "model_version": "0.1.0",
+  "evidence_sha256": "b86a5d9e7803cd1ce6e08ceda7db5e3ad8db65cc08daba4ecc854bb70b71d703",
+  "question_sha256": "526955c72440911f4109a68e267361d0c9fc645d4680756426eb537d5c7b6bfb",
+  "index": {
+    "cache_path": "/home/shaotianqi/LLM/hw7_3_clinical_rag/index/clinical-vectors.npz",
+    "signature": "Qwen/Qwen3-Embedding-8B|1d8ad4ca9b3dd8059ad90a75d4983776a23d44af|last_token|8192|True|Given a question on adult blood pressure measurement, screening or diagnosis, retrieve applicable clinical guideline recommendations and systematic-review evidence, matching the population, named authority, setting and measurement method.",
+    "rows": 80,
+    "dimensions": 4096
+  },
+  "selection_rule": "Eight answerable test questions selected before reading their system outputs; spread across classification, source comparison, confirmation, measurement, screening, review evidence, and exceptions; includes single- and multi-evidence cases.",
+  "conditions": {
+    "empty_supplied": "No evidence IDs are preloaded; the same default adaptive router may retrieve its normal evidence.",
+    "gold_supplied": "All joint gold IDs are preloaded; the same default adaptive router may reuse them or follow its ordinary evidence-gap behavior.",
+    "neighbor_only": "A count-matched set of same-theme records from different non-gold sources is preloaded, with no gold IDs; the same default adaptive router may reuse, supplement or abstain."
+  },
+  "one_worker": true,
+  "selected_questions": [
+    {
+      "id": "T01",
+      "group": "T01",
+      "family": "source_comparison",
+      "complexity": "multi",
+      "query": "AHA/ACC与ISH 2026分别把130–139/80–89 mmHg归为什么类别？",
+      "gold_ids": [
+        "AHA-CLASS-03",
+        "ISH-CLASS-02"
+      ],
+      "original_supplied": [
+        "AHA-CLASS-03"
+      ],
+      "gold_count": 2,
+      "distractor_ids": [
+        "NICE-CLASS-01",
+        "USP-BOUNDARY-01"
+      ],
+      "distractor_reason": "NICE第1期联合诊室/诊室外分级和USPSTF机构阈值范围都涉及130–140段，但不是AHA/ACC与ISH类别比较的共同金标。"
+    },
+    {
+      "id": "T03",
+      "group": "T03",
+      "family": "confirmation",
+      "complexity": "multi",
+      "query": "NICE对诊室150/96 mmHg的成人如何复测，并用什么方式确认？",
+      "gold_ids": [
+        "NICE-DX-03",
+        "NICE-DX-04"
+      ],
+      "original_supplied": [
+        "NICE-DX-03"
+      ],
+      "gold_count": 2,
+      "distractor_ids": [
+        "AHA-OUT-01",
+        "ISH-DX-02"
+      ],
+      "distractor_reason": "AHA/ACC与ISH也谈诊室外确认，但不是NICE规定的同次复测与ABPM区间金标。"
+    },
+    {
+      "id": "T05",
+      "group": "T05",
+      "family": "source_comparison",
+      "complexity": "single",
+      "query": "给医生一个AHA/ACC 140/90 mmHg诊室值对应的夜间和24小时ABPM表值。",
+      "gold_ids": [
+        "AHA-THRESH-02"
+      ],
+      "original_supplied": [
+        "AHA-THRESH-02"
+      ],
+      "gold_count": 1,
+      "distractor_ids": [
+        "ISH-OUT-01"
+      ],
+      "distractor_reason": "ISH的诊室外确认建议主题相近，但不是AHA/ACC表7的140/90测量映射值。"
+    },
+    {
+      "id": "T06",
+      "group": "T06",
+      "family": "classification",
+      "complexity": "single",
+      "query": "按ISH 2026的分级，成人标准化诊室160/100 mmHg处于哪个等级？",
+      "gold_ids": [
+        "ISH-CLASS-04"
+      ],
+      "original_supplied": [
+        "NICE-CLASS-02"
+      ],
+      "gold_count": 1,
+      "distractor_ids": [
+        "AHA-CLASS-04"
+      ],
+      "distractor_reason": "AHA/ACC也以140/90作为第2期阈值，但标签与ISH的Grade 2问题不能跨机构替代。"
+    },
+    {
+      "id": "T10",
+      "group": "T10",
+      "family": "measurement",
+      "complexity": "multi",
+      "query": "按ISH标准化诊室方案，安静坐位准备多久，袖带臂应怎样放置？",
+      "gold_ids": [
+        "ISH-MEAS-02",
+        "ISH-MEAS-03"
+      ],
+      "original_supplied": [
+        "ISH-MEAS-02"
+      ],
+      "gold_count": 2,
+      "distractor_ids": [
+        "NICE-MEAS-04",
+        "USP-PREP-01"
+      ],
+      "distractor_reason": "NICE与USPSTF都有安静坐位、上臂测量等相邻规则，但不是ISH的休息时长与手臂高度依据。"
+    },
+    {
+      "id": "T12",
+      "group": "T12",
+      "family": "screening",
+      "complexity": "multi",
+      "query": "USPSTF的筛查建议适用于哪类成人，何时须进行诊室外确认？",
+      "gold_ids": [
+        "USP-POP-01",
+        "USP-SCREEN-01"
+      ],
+      "original_supplied": [],
+      "gold_count": 2,
+      "distractor_ids": [
+        "NICE-POP-01",
+        "AHA-OUT-01"
+      ],
+      "distractor_reason": "NICE成人范围和AHA/ACC诊室外确认与筛查主题相近，但不能替代USPSTF对象及其确认前置条件。"
+    },
+    {
+      "id": "T15",
+      "group": "T15",
+      "family": "evidence_review",
+      "complexity": "multi",
+      "query": "USPSTF综述比较诊室初筛与诊室确诊时，二者的敏感度和特异度各是多少？",
+      "gold_ids": [
+        "REV-OFFICE-01",
+        "REV-OFFICE-CONFIRM-01"
+      ],
+      "original_supplied": [
+        "REV-SIZE-01"
+      ],
+      "gold_count": 2,
+      "distractor_ids": [
+        "JAHA-AOBP-02",
+        "AHA-OUT-01"
+      ],
+      "distractor_reason": "JAHA有人/无人测量差值及AHA/ACC确诊建议涉及血压测量，但不提供USPSTF综述的初筛与诊室确诊准确性。"
+    },
+    {
+      "id": "T19",
+      "group": "T19",
+      "family": "exceptions",
+      "complexity": "single",
+      "query": "NICE诊室读数180/120且合并新发意识混乱，应如何分流？",
+      "gold_ids": [
+        "NICE-URGENT-02"
+      ],
+      "original_supplied": [],
+      "gold_count": 1,
+      "distractor_ids": [
+        "ISH-DX-04"
+      ],
+      "distractor_reason": "ISH的单次就诊诊断例外也涉及严重血压和靶器官损害，但不替代NICE的当日转诊红旗条件。"
+    }
+  ]
+}

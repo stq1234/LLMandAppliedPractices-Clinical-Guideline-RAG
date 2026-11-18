@@ -1,0 +1,13 @@
+﻿split,candidate,reference,n_paired,candidate_gains,candidate_losses,ties,answerable_n,candidate_supported_keypoint_gains,candidate_supported_keypoint_losses,nonanswerable_refusal_n,candidate_correct_refusal_gains,candidate_correct_refusal_losses
+challenge,adaptive,adaptive_nocrit,24,0,1,23,20,0,1,4,0,0
+challenge,adaptive,multi,24,0,0,24,20,0,0,4,0,0
+challenge,adaptive,single,24,0,0,24,20,0,0,4,0,0
+challenge,adaptive_nocrit,adaptive,24,1,0,23,20,1,0,4,0,0
+challenge,adaptive_nocrit,multi,24,1,0,23,20,1,0,4,0,0
+challenge,adaptive_nocrit,single,24,1,0,23,20,1,0,4,0,0
+challenge,multi,adaptive,24,0,0,24,20,0,0,4,0,0
+challenge,multi,adaptive_nocrit,24,0,1,23,20,0,1,4,0,0
+challenge,multi,single,24,0,0,24,20,0,0,4,0,0
+challenge,single,adaptive,24,0,0,24,20,0,0,4,0,0
+challenge,single,adaptive_nocrit,24,0,1,23,20,0,1,4,0,0
+challenge,single,multi,24,0,0,24,20,0,0,4,0,0

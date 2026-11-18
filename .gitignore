@@ -1,0 +1,22 @@
+# Python runtime and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Regenerable vector and exact-request caches
+index/
+results/chat_cache.sqlite3
+results/extended_chat_cache.sqlite3
+*.tmp.npz
+
+# Local transient logs
+*.log

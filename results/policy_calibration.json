@@ -1,0 +1,406 @@
+{
+  "training_split": "dev",
+  "paired_questions": 36,
+  "families": [
+    "classification",
+    "confirmation",
+    "evidence_gap",
+    "evidence_review",
+    "exceptions",
+    "measurement",
+    "review_evidence",
+    "scope_boundary",
+    "screening"
+  ],
+  "features_used": [
+    "supplied_coverage"
+  ],
+  "candidate_policy": "adaptive reuse route when supplied_count>0 and supplied_scope_fraction==1 and supplied_coverage>=initial_threshold; otherwise default adaptive retrieval route",
+  "supplement_threshold": 0.25,
+  "multi_threshold": 0.5,
+  "objective": "100*answer_error + 100*unsupported_answer + 30*wrong_refusal; plus 0.002*tokens + 0.5*retrieval_rounds; latency is reported separately",
+  "aggregation": "family-macro mean; one-standard-error rule; threshold search restricted to [0.05, default 0.35]",
+  "minimum_candidate": {
+    "initial_threshold": 0.325,
+    "family_macro_risk_cost": 45.62083571428572,
+    "family_se": 12.381519887144927,
+    "family_costs": {
+      "evidence_review": 99.275,
+      "classification": 47.168000000000006,
+      "measurement": 25.3104,
+      "confirmation": 77.23828571428571,
+      "screening": 32.17,
+      "exceptions": 73.539,
+      "scope_boundary": 0.0,
+      "evidence_gap": 10.266
+    },
+    "action_counts": {
+      "adaptive_force_reuse": 0,
+      "adaptive": 36
+    }
+  },
+  "selected_candidate": {
+    "initial_threshold": 0.35,
+    "family_macro_risk_cost": 45.62083571428572,
+    "family_se": 12.381519887144927,
+    "family_costs": {
+      "evidence_review": 99.275,
+      "classification": 47.168000000000006,
+      "measurement": 25.3104,
+      "confirmation": 77.23828571428571,
+      "screening": 32.17,
+      "exceptions": 73.539,
+      "scope_boundary": 0.0,
+      "evidence_gap": 10.266
+    },
+    "action_counts": {
+      "adaptive_force_reuse": 0,
+      "adaptive": 36
+    }
+  },
+  "all_candidates": [
+    {
+      "initial_threshold": 0.05,
+      "family_macro_risk_cost": 45.91450535714286,
+      "family_se": 12.47046623826474,
+      "family_costs": {
+        "evidence_review": 99.9605,
+        "classification": 47.326285714285724,
+        "measurement": 25.699399999999997,
+        "confirmation": 77.57885714285715,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 9,
+        "adaptive": 27
+      }
+    },
+    {
+      "initial_threshold": 0.078,
+      "family_macro_risk_cost": 45.89850535714286,
+      "family_se": 12.474181179937414,
+      "family_costs": {
+        "evidence_review": 99.9605,
+        "classification": 47.326285714285724,
+        "measurement": 25.5714,
+        "confirmation": 77.57885714285715,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 8,
+        "adaptive": 28
+      }
+    },
+    {
+      "initial_threshold": 0.094,
+      "family_macro_risk_cost": 45.85544285714286,
+      "family_se": 12.44756582132232,
+      "family_costs": {
+        "evidence_review": 99.616,
+        "classification": 47.326285714285724,
+        "measurement": 25.5714,
+        "confirmation": 77.57885714285715,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 7,
+        "adaptive": 29
+      }
+    },
+    {
+      "initial_threshold": 0.1,
+      "family_macro_risk_cost": 45.83976785714286,
+      "family_se": 12.451224201522216,
+      "family_costs": {
+        "evidence_review": 99.616,
+        "classification": 47.326285714285724,
+        "measurement": 25.446,
+        "confirmation": 77.57885714285715,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 6,
+        "adaptive": 30
+      }
+    },
+    {
+      "initial_threshold": 0.11,
+      "family_macro_risk_cost": 45.81848214285715,
+      "family_se": 12.443488727701197,
+      "family_costs": {
+        "evidence_review": 99.616,
+        "classification": 47.326285714285724,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 5,
+        "adaptive": 31
+      }
+    },
+    {
+      "initial_threshold": 0.123,
+      "family_macro_risk_cost": 45.77585714285715,
+      "family_se": 12.417207886362727,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.326285714285724,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 4,
+        "adaptive": 32
+      }
+    },
+    {
+      "initial_threshold": 0.13,
+      "family_macro_risk_cost": 45.77585714285715,
+      "family_se": 12.417207886362727,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.326285714285724,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 4,
+        "adaptive": 32
+      }
+    },
+    {
+      "initial_threshold": 0.132,
+      "family_macro_risk_cost": 45.75607142857143,
+      "family_se": 12.416870720918375,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 3,
+        "adaptive": 33
+      }
+    },
+    {
+      "initial_threshold": 0.15,
+      "family_macro_risk_cost": 45.75607142857143,
+      "family_se": 12.416870720918375,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 3,
+        "adaptive": 33
+      }
+    },
+    {
+      "initial_threshold": 0.16,
+      "family_macro_risk_cost": 45.75607142857143,
+      "family_se": 12.416870720918375,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 3,
+        "adaptive": 33
+      }
+    },
+    {
+      "initial_threshold": 0.198,
+      "family_macro_risk_cost": 45.75607142857143,
+      "family_se": 12.416870720918375,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 3,
+        "adaptive": 33
+      }
+    },
+    {
+      "initial_threshold": 0.2,
+      "family_macro_risk_cost": 45.75607142857143,
+      "family_se": 12.416870720918375,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.40857142857143,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 3,
+        "adaptive": 33
+      }
+    },
+    {
+      "initial_threshold": 0.241,
+      "family_macro_risk_cost": 45.73478571428572,
+      "family_se": 12.409135050602103,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.23828571428571,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 2,
+        "adaptive": 34
+      }
+    },
+    {
+      "initial_threshold": 0.25,
+      "family_macro_risk_cost": 45.73478571428572,
+      "family_se": 12.409135050602103,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.23828571428571,
+        "screening": 32.17,
+        "exceptions": 74.315,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 2,
+        "adaptive": 34
+      }
+    },
+    {
+      "initial_threshold": 0.286,
+      "family_macro_risk_cost": 45.63778571428572,
+      "family_se": 12.377558785139817,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.23828571428571,
+        "screening": 32.17,
+        "exceptions": 73.539,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 1,
+        "adaptive": 35
+      }
+    },
+    {
+      "initial_threshold": 0.3,
+      "family_macro_risk_cost": 45.63778571428572,
+      "family_se": 12.377558785139817,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.446,
+        "confirmation": 77.23828571428571,
+        "screening": 32.17,
+        "exceptions": 73.539,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 1,
+        "adaptive": 35
+      }
+    },
+    {
+      "initial_threshold": 0.325,
+      "family_macro_risk_cost": 45.62083571428572,
+      "family_se": 12.381519887144927,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.3104,
+        "confirmation": 77.23828571428571,
+        "screening": 32.17,
+        "exceptions": 73.539,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 0,
+        "adaptive": 36
+      }
+    },
+    {
+      "initial_threshold": 0.35,
+      "family_macro_risk_cost": 45.62083571428572,
+      "family_se": 12.381519887144927,
+      "family_costs": {
+        "evidence_review": 99.275,
+        "classification": 47.168000000000006,
+        "measurement": 25.3104,
+        "confirmation": 77.23828571428571,
+        "screening": 32.17,
+        "exceptions": 73.539,
+        "scope_boundary": 0.0,
+        "evidence_gap": 10.266
+      },
+      "action_counts": {
+        "adaptive_force_reuse": 0,
+        "adaptive": 36
+      }
+    }
+  ],
+  "params_file": "results/policy_params.json"
+}
